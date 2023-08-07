@@ -1,0 +1,49 @@
+name: Deploy-Book
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule: 
+    - cron: "0 */1 * * *" 
+
+# This job installs dependencies, builds the book, and pushes it to `gh-pages`
+jobs:
+  deploy-book:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        architecture: 'x64'
+
+    # Install dependencies
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get install jupyter -y --fix-missing
+        python -m pip install nbconvert
+        python -m pip install --upgrade pip -r requirements.txt
+        
+    - name: Grab Needed Data
+      run: |
+        sudo apt install unzip
+        wget https://epss.cyentia.com/epss_scores-current.csv.gz -O epss_scores-current.csv.gz 
+        gzip -f -d epss_scores-current.csv.gz  
+        curl https://raw.githubusercontent.com/rapid7/metasploit-framework/master/db/modules_metadata_base.json | jq '.[]|{cve:.references[]|select(startswith("CVE-"))}| join(",")' > cves.txt
+        wget https://www.cisa.gov/sites/default/files/csv/known_exploited_vulnerabilities.csv -O known_exploited_vulnerabilities.csv
+        wget https://nvd.handsonhacking.org/nvd.jsonl -O nvd.jsonl
+         
+    - name: Run Notebooks
+      env:
+        GH_TOKEN:  ${{ secrets.GH_TOKEN }}
+      run: |
+         jupyter nbconvert  --to notebook --inplace --execute patchthisapp.ipynb
+    
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v9
+      with:
+          default_author: github_actions
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
