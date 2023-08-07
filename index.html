@@ -5,21 +5,14 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CSV to HTML Table</title>
-    <meta name="author" content="Derek Eder">
-    <meta content="Display any CSV file as a searchable, filterable, pretty HTML table">
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <title>PatchThisApp</title>
 </head>
 
 <body>
     <div class="container-fluid">
         <main class="row">
             <div class="col">
-                <h1>PatchThis.app</h1>
+                <h2>PatchThis.app</h2>
                 <div id="table-container"></div>
             </div>
         </main>
@@ -51,9 +44,16 @@
             datatables_options: {
                 paging: true
             },
+            element: 'table-container',
             custom_formatting: [
-            ]
-        });
+            ],
+            columnDefs: [
+        {
+            target: 3,
+            visible: false
+        }
+    ]
+});
     </script>
 </body>
 
