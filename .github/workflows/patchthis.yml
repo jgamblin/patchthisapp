@@ -9,7 +9,7 @@ on:
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
-  deploy-book:
+  update-list:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v3
