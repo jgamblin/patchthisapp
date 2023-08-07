@@ -1,2 +1,10 @@
+calplot
+folium
+geopy
+ipython
+itables
+matplotlib
 numpy
 pandas
+plotly
+seaborn
