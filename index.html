@@ -22,54 +22,15 @@
                 <ul>
                     <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA&nbsp;Known Exploited Vulnerabilities Catalog</a></li>
                     <li><a href="https://docs.rapid7.com/metasploit/modules/">Metasploit Modules</a></li>
-                    <li><a href="https://www.first.org/epss/">EPSS </a>Vulnerabilities&nbsp;Scoring Above .90 (on a 0.0 to 1.0 scale)</li>
+                    <li><a href="https://www.first.org/epss/">EPSS</a> Vulnerabilities&nbsp;Scoring Above .90 (on a 0.0 to 1.0 scale)</li>
                 </ul>
                 
-                <p>&nbsp;</p>
-                <div id="table-container"></div>
-            </div>
+                <p>The list are curated now is updated hourly and contains over 3400 CVEs. The output is saved in this <a href="https://raw.githubusercontent.com/jgamblin/patchthisapp/main/data/data.csv">CSV file</a> and the code is avavilble in this <a href="https://github.com/jgamblin/patchthisapp">GitHub Repo</a>.</p>
+                <p>Questions or Comments? Please open a <a href="https://github.com/jgamblin/patchthisapp/issues">GitHub issue</a>. </p>
         </main>
         <footer class="row">
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.csv.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
-    <script src="js/csv_to_html_table.js"></script>
-
-    <script>
-        function format_link(link) {
-            if (link)
-                return "<a href='" + link + "' target='_blank'>" + link + "</a>";
-            else return "";
-        }
-
-        CsvToHtmlTable.init({
-            csv_path: "https://raw.githubusercontent.com/jgamblin/patchthisapp/main/data/data.csv",
-            element: "table-container",
-            allow_download: true,
-            csv_options: {
-                separator: ",",
-                delimiter: '"'
-            },
-            datatables_options: {
-                paging: true
-            },
-            element: 'table-container',
-            custom_formatting: [
-            ],
-            columnDefs: [
-        {
-            target: 4,
-            visible: false,
-            searchable: false
-        },
-    ]
-
-        });
-    </script>
 </body>
 
 </html>
