@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: post
 title:  "Welcome to Jekyll!"
 ---
 
