@@ -31,7 +31,8 @@ jobs:
         sudo apt install unzip
         wget https://epss.cyentia.com/epss_scores-current.csv.gz -O epss_scores-current.csv.gz 
         gzip -f -d epss_scores-current.csv.gz  
-        curl https://raw.githubusercontent.com/rapid7/metasploit-framework/master/db/modules_metadata_base.json | jq '.[]|{cve:.references[]|select(startswith("CVE-"))}| join(",")' > cves.txt
+        curl https://raw.githubusercontent.com/rapid7/metasploit-framework/master/db/modules_metadata_base.json | jq '.[]|{cve:.references[]|select(startswith("CVE-"))}| join(",")' > metasploit.txt
+        curl https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/main/cves.json | jq -r .ID > nuclei.txt
         wget https://www.cisa.gov/sites/default/files/csv/known_exploited_vulnerabilities.csv -O known_exploited_vulnerabilities.csv
         wget https://nvd.handsonhacking.org/nvd.jsonl -O nvd.jsonl
          
