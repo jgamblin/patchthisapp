@@ -30,7 +30,7 @@ twitter_username: jgamblin
 github_username:  jgamblin
 
 # Build settings
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
 
