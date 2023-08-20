@@ -107,7 +107,7 @@ author:
   name             : "Jerry Gamblin"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
-  location         : ""
+  location         : 
   email            :
   links:
     - label: "Email"
