@@ -163,3 +163,5 @@ nvd.jsonl
 known_exploited_vulnerabilities.csv
 cves.txt
 epss_scores-current.csv
+metasploit.txt
+nuclei.txt
