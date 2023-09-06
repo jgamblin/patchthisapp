@@ -362,6 +362,23 @@ CVE-2023-24489,9.8,0.97441,"
 A vulnerability has been discovered in the customer-managed ShareFile storage zones controller which, if exploited, could allow an unauthenticated attacker to remotely compromise the customer-managed ShareFile storage zones controller.",2023-07-10 22:15:09.197
 CVE-2023-38035,9.8,0.96013,"A security vulnerability in MICS Admin Portal in Ivanti MobileIron Sentry versions 9.18.0 and below, which may allow an attacker to bypass authentication controls on the administrative interface due to an insufficiently restrictive Apache HTTPD configuration. ",2023-08-21 17:15:47.457
 CVE-2023-32315,7.5,0.97342,"Openfire is an XMPP server licensed under the Open Source Apache License. Openfire's administrative console, a web-based application, was found to be vulnerable to a path traversal attack via the setup environment. This permitted an unauthenticated user to use the unauthenticated Openfire Setup Environment in an already configured Openfire environment to access restricted pages in the Openfire Admin Console reserved for administrative users. This vulnerability affects all versions of Openfire that have been released since April 2015, starting with version 3.10.0. The problem has been patched in Openfire release 4.7.5 and 4.6.8, and further improvements will be included in the yet-to-be released first version on the 4.8 branch (which is expected to be version 4.8.0). Users are advised to upgrade. If an Openfire upgrade isn’t available for a specific release, or isn’t quickly actionable, users may see the linked github advisory (GHSA-gw42-f939-fhvm) for mitigation advice.",2023-05-26 23:15:16.643
+CVE-2023-33246,9.8,0.96386,"For RocketMQ versions 5.1.0 and below, under certain conditions, there is a risk of remote command execution. 
+
+Several components of RocketMQ, including NameServer, Broker, and Controller, are leaked on the extranet and lack permission verification, an attacker can exploit this vulnerability by using the update configuration function to execute commands as the system users that RocketMQ is running as. Additionally, an attacker can achieve the same effect by forging the RocketMQ protocol content. 
+
+To prevent these attacks, users are recommended to upgrade to version 5.1.1 or above for using RocketMQ 5.x or 4.9.6 or above for using RocketMQ 4.x .
+
+
+
+
+
+
+
+
+
+
+
+",2023-05-24 15:15:09.553
 CVE-2005-2611,0.0,0.97378,"VERITAS Backup Exec for Windows Servers 8.6 through 10.0, Backup Exec for NetWare Servers 9.0 and 9.1, and NetBackup for NetWare Media Server Option 4.5 through 5.1 uses a static password during authentication from the NDMP agent to the server, which allows remote attackers to read and write arbitrary files with the backup server.",2005-08-17 04:00:00.000
 CVE-2005-0771,0.0,0.96769,VERITAS Backup Exec Server (beserver.exe) 9.0 through 10.0 for Windows allows remote unauthenticated attackers to modify the registry by calling methods to the RPC interface on TCP port 6106.,2005-06-23 04:00:00.000
 CVE-2011-0923,0.0,0.97203,"The client in HP Data Protector does not properly validate EXEC_CMD arguments, which allows remote attackers to execute arbitrary Perl code via a crafted command, related to the ""local bin directory.""",2011-02-09 01:00:09.760
@@ -601,23 +618,6 @@ CVE-2019-9851,9.8,0.97026,"LibreOffice is typically bundled with LibreLogo, a pr
 CVE-2018-16858,0.0,0.96877,"It was found that libreoffice before versions 6.0.7 and 6.1.3 was vulnerable to a directory traversal attack which could be used to execute arbitrary macros bundled with a document. An attacker could craft a document, which when opened by LibreOffice, would execute a Python method from a script in any arbitrary file system location, specified relative to the LibreOffice install location.",2019-03-25 18:29:00.463
 CVE-2013-4660,0.0,0.97031,"The JS-YAML module before 2.0.5 for Node.js parses input without properly considering the unsafe !!js/function tag, which allows remote attackers to execute arbitrary code via a crafted string that triggers an eval operation.",2013-06-28 14:55:02.803
 CVE-2000-0573,0.0,0.97211,"The lreply function in wu-ftpd 2.6.0 and earlier does not properly cleanse an untrusted format string, which allows remote attackers to execute arbitrary commands via the SITE EXEC command.",2000-07-07 04:00:00.000
-CVE-2023-33246,9.8,0.96386,"For RocketMQ versions 5.1.0 and below, under certain conditions, there is a risk of remote command execution. 
-
-Several components of RocketMQ, including NameServer, Broker, and Controller, are leaked on the extranet and lack permission verification, an attacker can exploit this vulnerability by using the update configuration function to execute commands as the system users that RocketMQ is running as. Additionally, an attacker can achieve the same effect by forging the RocketMQ protocol content. 
-
-To prevent these attacks, users are recommended to upgrade to version 5.1.1 or above for using RocketMQ 5.x or 4.9.6 or above for using RocketMQ 4.x .
-
-
-
-
-
-
-
-
-
-
-
-",2023-05-24 15:15:09.553
 CVE-2013-4212,0.0,0.96683,"Certain getText methods in the ActionSupport controller in Apache Roller before 5.0.2 allow remote attackers to execute arbitrary OGNL expressions via the first or second parameter, as demonstrated by the pageTitle parameter in the !getPageTitle sub-URL to roller-ui/login.rol, which uses a subclass of UIAction, aka ""OGNL Injection.""",2013-12-07 20:55:02.320
 CVE-2013-5486,0.0,0.97357,"Directory traversal vulnerability in processImageSave.jsp in DCNM-SAN Server in Cisco Prime Data Center Network Manager (DCNM) before 6.2(1) allows remote attackers to write arbitrary files via the chartid parameter, aka Bug IDs CSCue77035 and CSCue77036.  NOTE: this can be leveraged to execute arbitrary commands by using the JBoss autodeploy functionality.",2013-09-23 10:18:59.157
 CVE-2018-7665,0.0,0.96176,"An issue was discovered in ClipBucket before 4.0.0 Release 4902. A malicious file can be uploaded via the name parameter to actions/beats_uploader.php or actions/photo_uploader.php, or the coverPhoto parameter to edit_account.php.",2018-03-05 07:29:00.383
