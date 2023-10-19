@@ -5086,7 +5086,8 @@ CVE-2022-26923,8.8,0.0059,Active Directory Domain Services Elevation of Privileg
 CVE-2022-26925,5.9,0.97091,Windows LSA Spoofing Vulnerability.,2022-05-10 21:15:10.187,EPSS/CISA
 CVE-2022-26960,9.1,0.92542,"connector.minimal.php in std42 elFinder through 2.1.60 is affected by path traversal. This allows unauthenticated remote attackers to read, write, and browse files outside the configured document root. This is due to improper handling of absolute file paths.",2022-03-21 17:15:07.740,Nuclei
 CVE-2022-2733,6.1,0.00198,Cross-site Scripting (XSS) - Reflected in GitHub repository openemr/openemr prior to 7.0.0.1.,2022-08-09 12:15:08.417,Nuclei
-CVE-2022-27518,9.8,0.03337,Unauthenticated remote arbitrary code execution,2022-12-13 17:15:14.350,CISA
+CVE-2022-27518,9.8,0.03337,"Unauthenticated remote arbitrary code execution
+",2022-12-13 17:15:14.350,CISA
 CVE-2022-2756,6.5,0.00724,Server-Side Request Forgery (SSRF) in GitHub repository kareadita/kavita prior to 0.5.4.1.,2022-08-10 16:15:08.423,Nuclei
 CVE-2022-27593,9.1,0.39295,"An externally controlled reference to a resource vulnerability has been reported to affect QNAP NAS running Photo Station. If exploited, This could allow an attacker to modify system files. We have already fixed the vulnerability in the following versions: QTS 5.0.1: Photo Station 6.1.2 and later QTS 5.0.0/4.5.x: Photo Station 6.0.22 and later QTS 4.3.6: Photo Station 5.7.18 and later QTS 4.3.3: Photo Station 5.4.15 and later QTS 4.2.6: Photo Station 5.2.14 and later",2022-09-08 11:15:19.503,CISA/Nuclei
 CVE-2022-27849,7.5,0.00659,Sensitive Information Disclosure (sac-export.csv) in Simple Ajax Chat (WordPress plugin) <= 20220115,2022-04-15 17:15:08.773,Nuclei
