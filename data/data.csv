@@ -5497,7 +5497,7 @@ CVE-2023-22515,9.8,0.95794,"Atlassian has been made aware of an issue reported b
 
 Atlassian Cloud sites are not affected by this vulnerability. If your Confluence site is accessed via an atlassian.net domain, it is hosted by Atlassian and is not vulnerable to this issue. 
 
-For more details, please review the linked advisory on this CVE.",2023-10-04 14:15:10.440,EPSS/CISA/Metasploit/Nuclei
+For more details, please review the linked advisory on this CVE.",2023-10-04 14:15:10.440,EPSS/CISA/Nuclei
 CVE-2023-22620,7.5,0.01193,An issue was discovered in SecurePoint UTM before 12.2.5.1. The firewall's endpoint at /spcgi.cgi allows sessionid information disclosure via an invalid authentication attempt. This can afterwards be used to bypass the device's authentication and get access to the administrative interface.,2023-04-12 23:15:06.943,Nuclei
 CVE-2023-2272,6.1,0.00064,"The Tiempo.com WordPress plugin through 0.1.2 does not sanitise and escape the page parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin",2023-08-16 12:15:13.053,Nuclei
 CVE-2023-22809,7.8,0.00052,"In Sudo before 1.9.12p2, the sudoedit (aka -e) feature mishandles extra arguments passed in the user-provided environment variables (SUDO_EDITOR, VISUAL, and EDITOR), allowing a local attacker to append arbitrary entries to the list of files to process. This can lead to privilege escalation. Affected versions are 1.8.0 through 1.9.12.p1. The problem exists because a user-specified editor may contain a ""--"" argument that defeats a protection mechanism, e.g., an EDITOR='vim -- /path/to/extra/file' value.",2023-01-18 17:15:10.353,Metasploit
