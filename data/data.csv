@@ -5686,6 +5686,7 @@ Thanks to a Researcher at Tenable for finding and reporting.
 
 Fixed in version 6.4.1.",2023-08-10 20:15:10.200,Metasploit
 CVE-2023-32563,9.8,0.27941,An unauthenticated attacker could achieve the code execution through a RemoteControl server.,2023-08-10 20:15:10.437,Nuclei
+CVE-2023-32707,8.8,0.00501,"In versions of Splunk Enterprise below 9.0.5, 8.2.11, and 8.1.14, and Splunk Cloud Platform below version 9.0.2303.100, a low-privileged user who holds a role that has the ‘edit_user’ capability assigned to it can escalate their privileges to that of the admin user by providing specially crafted web requests.",2023-06-01 17:15:10.117,Metasploit
 CVE-2023-33009,9.8,0.02137,"A buffer overflow vulnerability in the notification function in Zyxel ATP series firmware versions 4.60 through 5.36 Patch 1, USG FLEX series firmware versions 4.60 through 5.36 Patch 1, USG FLEX 50(W) firmware versions 4.60 through 5.36 Patch 1, USG20(W)-VPN firmware versions 4.60 through 5.36 Patch 1, VPN series firmware versions 4.60 through 5.36 Patch 1, ZyWALL/USG series firmware versions 4.60 through 4.73 Patch 1, could allow an unauthenticated attacker to cause denial-of-service (DoS) conditions and even a remote code execution on an affected device.
 
 ",2023-05-24 13:15:09.560,CISA
@@ -5979,3 +5980,15 @@ CVE-2023-4974,9.8,0.02282,A vulnerability was found in Academy LMS 6.2. It has b
 CVE-2023-5074,9.8,0.02445,Use of a static key to protect a JWT token used in user authentication can allow an for an authentication bypass in D-Link D-View 8 v2.0.1.28,2023-09-20 16:15:12.750,Nuclei
 CVE-2023-5217,8.8,0.24402,Heap buffer overflow in vp8 encoding in libvpx in Google Chrome prior to 117.0.5938.132 and libvpx 1.13.1 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High),2023-09-28 16:15:10.980,CISA
 CVE-2023-5244,6.1,0.0007,Cross-site Scripting (XSS) - Reflected in GitHub repository microweber/microweber prior to 2.0.,2023-09-28 01:15:09.060,Nuclei
+CVE-2023-5631,5.4,0.001,"
+Roundcube before 1.4.15, 1.5.x before 1.5.5, and 1.6.x before 1.6.4 allows stored XSS via an HTML e-mail message with a crafted SVG document because of program/lib/Roundcube/rcube_washtml.php behavior. This could allow a remote attacker
+
+to load arbitrary JavaScript code.
+
+
+
+
+
+
+
+",2023-10-18 15:15:08.727,CISA
