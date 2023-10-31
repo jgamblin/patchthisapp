@@ -5979,7 +5979,7 @@ CVE-2023-4966,7.5,0.1799,"Sensitive information disclosure in NetScaler ADC and
 
 
 
-",2023-10-10 14:15:10.977,CISA/Nuclei
+",2023-10-10 14:15:10.977,CISA/Metasploit/Nuclei
 CVE-2023-4974,9.8,0.02282,A vulnerability was found in Academy LMS 6.2. It has been rated as critical. Affected by this issue is some unknown functionality of the file /academy/tutor/filter of the component GET Parameter Handler. The manipulation of the argument price_min/price_max leads to sql injection. The attack may be launched remotely. VDB-239750 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.,2023-09-15 03:15:09.393,Nuclei
 CVE-2023-5074,9.8,0.02445,Use of a static key to protect a JWT token used in user authentication can allow an for an authentication bypass in D-Link D-View 8 v2.0.1.28,2023-09-20 16:15:12.750,Nuclei
 CVE-2023-5217,8.8,0.24402,Heap buffer overflow in vp8 encoding in libvpx in Google Chrome prior to 117.0.5938.132 and libvpx 1.13.1 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High),2023-09-28 16:15:10.980,CISA
