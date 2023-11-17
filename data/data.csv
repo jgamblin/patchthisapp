@@ -5382,7 +5382,7 @@ CVE-2022-45038,5.4,0.00086,A cross-site scripting (XSS) vulnerability in /admin/
 CVE-2022-45805,9.8,0.00547,"Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Paytm Paytm Payment Gateway paytm-payments allows SQL Injection.This issue affects Paytm Payment Gateway: from n/a through 2.7.3.
 
 ",2023-11-03 13:15:08.227,Nuclei
-CVE-2022-45835,5.8,0.00049,"Server-Side Request Forgery (SSRF) vulnerability in PhonePe PhonePe Payment Solutions.This issue affects PhonePe Payment Solutions: from n/a through 1.0.15.
+CVE-2022-45835,7.5,0.00049,"Server-Side Request Forgery (SSRF) vulnerability in PhonePe PhonePe Payment Solutions.This issue affects PhonePe Payment Solutions: from n/a through 1.0.15.
 
 ",2023-11-13 03:15:07.783,Nuclei
 CVE-2022-45917,6.1,0.0011,ILIAS before 7.16 has an Open Redirect.,2022-12-07 01:15:11.620,Nuclei
