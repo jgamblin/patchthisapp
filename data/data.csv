@@ -5737,8 +5737,7 @@ CVE-2023-34756,9.8,0.01254,bloofox v0.5.2.1 was discovered to contain a SQL inje
 CVE-2023-3479,6.1,0.0007,Cross-site Scripting (XSS) - Reflected in GitHub repository hestiacp/hestiacp prior to 1.7.8.,2023-06-30 10:15:09.567,Nuclei
 CVE-2023-34843,7.5,0.00349,Traggo Server 0.3.0 is vulnerable to directory traversal via a crafted GET request.,2023-06-29 00:15:09.670,Nuclei
 CVE-2023-34960,9.8,0.88204,A command injection vulnerability in the wsConvertPpt component of Chamilo v1.11.* up to v1.11.18 allows attackers to execute arbitrary commands via a SOAP API call with a crafted PowerPoint name.,2023-08-01 02:15:10.307,Metasploit/Nuclei
-CVE-2023-35078,9.8,0.96318,"
-Ivanti Endpoint Manager Mobile (EPMM), formerly MobileIron Core, through 11.10 allows remote attackers to obtain PII, add an administrative account, and change the configuration because of an authentication bypass, as exploited in the wild in July 2023. A patch is available.",2023-07-25 07:15:10.897,EPSS/CISA/Nuclei
+CVE-2023-35078,9.8,0.96318,An authentication bypass vulnerability in Ivanti EPMM allows unauthorized users to access restricted functionality or resources of the application without proper authentication.,2023-07-25 07:15:10.897,EPSS/CISA/Nuclei
 CVE-2023-35081,7.2,0.62318,"A path traversal vulnerability in Ivanti EPMM versions (11.10.x < 11.10.0.3,  11.9.x < 11.9.1.2 and 11.8.x < 11.8.1.2) allows an authenticated administrator to write arbitrary files onto the appliance.",2023-08-03 18:15:11.303,CISA
 CVE-2023-35082,9.8,0.07991,"An authentication bypass vulnerability in Ivanti EPMM 11.10 and older, allows unauthorized users to access restricted functionality or resources of the application without proper authentication. This vulnerability is unique to CVE-2023-35078 announced earlier.",2023-08-15 16:15:11.633,Nuclei
 CVE-2023-3519,9.8,0.89042,"Unauthenticated remote code execution
