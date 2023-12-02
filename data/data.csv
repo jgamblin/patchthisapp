@@ -6155,4 +6155,4 @@ to load arbitrary JavaScript code.
 
 
 ",2023-10-18 15:15:08.727,CISA
-CVE-2023-6345,0.0,0.00174,Integer overflow in Skia in Google Chrome prior to 119.0.6045.199 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a malicious file. (Chromium security severity: High),2023-11-29 12:15:07.077,CISA
+CVE-2023-6345,9.6,0.00174,Integer overflow in Skia in Google Chrome prior to 119.0.6045.199 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a malicious file. (Chromium security severity: High),2023-11-29 12:15:07.077,CISA
