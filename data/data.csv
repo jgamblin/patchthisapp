@@ -5672,8 +5672,8 @@ CVE-2023-33009,9.8,0.0281,"A buffer overflow vulnerability in the notification f
 ",2023-05-24 13:15:09.560,CISA
 CVE-2023-33010,9.8,0.0281,"A buffer overflow vulnerability in the ID processing function in Zyxel ATP series firmware versions 4.32 through 5.36 Patch 1, USG FLEX series firmware versions 4.50 through 5.36 Patch 1, USG FLEX 50(W) firmware versions 4.25 through 5.36 Patch 1, USG20(W)-VPN firmware versions 4.25 through 5.36 Patch 1, VPN series firmware versions 4.30 through 5.36 Patch 1, ZyWALL/USG series firmware versions 4.25 through 4.73 Patch 1, could allow an unauthenticated attacker to cause denial-of-service (DoS) conditions and even a remote code execution on an affected device.",2023-05-24 13:15:09.640,CISA
 CVE-2023-33063,7.8,0.00154,Memory corruption in DSP Services during a remote call from HLOS to DSP.,2023-12-05 03:15:12.067,CISA
-CVE-2023-33106,8.4,0.00154,Memory corruption while submitting a large list of sync points in an AUX command to the IOCTL_KGSL_GPU_AUX_COMMAND.,2023-12-05 03:15:14.673,CISA
-CVE-2023-33107,8.4,0.00154,Memory corruption in Graphics Linux while assigning shared virtual memory region during IOCTL call.,2023-12-05 03:15:14.860,CISA
+CVE-2023-33106,7.8,0.00154,Memory corruption while submitting a large list of sync points in an AUX command to the IOCTL_KGSL_GPU_AUX_COMMAND.,2023-12-05 03:15:14.673,CISA
+CVE-2023-33107,7.8,0.00154,Memory corruption in Graphics Linux while assigning shared virtual memory region during IOCTL call.,2023-12-05 03:15:14.860,CISA
 CVE-2023-33246,9.8,0.97122,"For RocketMQ versions 5.1.0 and below, under certain conditions, there is a risk of remote command execution. 
 
 Several components of RocketMQ, including NameServer, Broker, and Controller, are leaked on the extranet and lack permission verification, an attacker can exploit this vulnerability by using the update configuration function to execute commands as the system users that RocketMQ is running as. Additionally, an attacker can achieve the same effect by forging the RocketMQ protocol content. 
@@ -6111,6 +6111,7 @@ CVE-2023-45542,6.1,0.00111,Cross Site Scripting vulnerability in mooSocial 3.1.8
 CVE-2023-4568,6.5,0.00254,"PaperCut NG allows for unauthenticated XMLRPC commands to be run by default. Versions 22.0.12 and below are confirmed to be affected, but later versions may also be affected due to lack of a vendor supplied patch.",2023-09-13 21:15:07.807,Nuclei
 CVE-2023-45852,9.8,0.11006,"In Vitogate 300 2.1.3.0, /cgi-bin/vitogate.cgi allows an unauthenticated attacker to bypass authentication and execute arbitrary commands via shell metacharacters in the ipaddr params JSON data for the put method.",2023-10-14 02:15:09.270,Nuclei
 CVE-2023-4596,9.8,0.08202,"The Forminator plugin for WordPress is vulnerable to arbitrary file uploads due to file type validation occurring after a file has been uploaded to the server in the upload_post_image() function in versions up to, and including, 1.24.6. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",2023-08-30 02:15:09.353,Nuclei
+CVE-2023-46214,8.8,0.00239,"In Splunk Enterprise versions below 9.0.7 and 9.1.2, Splunk Enterprise does not safely sanitize extensible stylesheet language transformations (XSLT) that users supply. This means that an attacker can upload malicious XSLT which can result in remote code execution on the Splunk Enterprise instance.",2023-11-16 21:15:08.630,Metasploit
 CVE-2023-4634,9.8,0.01945,"The Media Library Assistant plugin for WordPress is vulnerable to Local File Inclusion and Remote Code Execution in versions up to, and including, 3.09. This is due to insufficient controls on file paths being supplied to the 'mla_stream_file' parameter from the ~/includes/mla-stream-image.php file, where images are processed via Imagick(). This makes it possible for unauthenticated attackers to supply files via FTP that will make directory lists, local file inclusion, and remote code execution possible.",2023-09-06 09:15:08.873,Nuclei
 CVE-2023-46604,9.8,0.96805,"The Java OpenWire protocol marshaller is vulnerable to Remote Code 
 Execution. This vulnerability may allow a remote attacker with network 
@@ -6138,7 +6139,7 @@ may allow an authenticated attacker with network access to the Configuration uti
 CVE-2023-4714,7.5,0.02131,A vulnerability was found in PlayTube 3.0.1 and classified as problematic. This issue affects some unknown processing of the component Redirect Handler. The manipulation leads to information disclosure. The attack may be initiated remotely. The identifier VDB-238577 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.,2023-09-01 20:15:08.890,Nuclei
 CVE-2023-47246,9.8,0.66797,"In SysAid On-Premise before 23.3.36, a path traversal vulnerability leads to code execution after an attacker writes a file to the Tomcat webroot, as exploited in the wild in November 2023.",2023-11-10 06:15:30.510,CISA/Nuclei
 CVE-2023-4863,8.8,0.4101,Heap buffer overflow in libwebp in Google Chrome prior to 116.0.5845.187 and libwebp 1.3.2 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: Critical),2023-09-12 15:15:24.327,CISA
-CVE-2023-49070,0.0,0.00066,"
+CVE-2023-49070,9.8,0.00066,"
 Pre-auth RCE in Apache Ofbiz 18.12.09.
 
 It's due to XML-RPC no longer maintained still present.
