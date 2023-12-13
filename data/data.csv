@@ -5373,7 +5373,7 @@ CVE-2022-44952,5.4,0.07295,"Rukovoditel v3.2.1 was discovered to contain a store
 CVE-2022-44957,5.4,0.00091,webtareas 2.4p5 was discovered to contain a cross-site scripting (XSS) vulnerability in the component /clients/listclients.php. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.,2022-12-02 20:15:14.897,Nuclei
 CVE-2022-45037,5.4,0.00092,A cross-site scripting (XSS) vulnerability in /admin/users/index.php of WBCE CMS v1.5.4 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Display Name field.,2022-11-25 16:15:10.927,Nuclei
 CVE-2022-45038,5.4,0.00092,A cross-site scripting (XSS) vulnerability in /admin/settings/save.php of WBCE CMS v1.5.4 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Website Footer field.,2022-11-25 16:15:10.977,Nuclei
-CVE-2022-45362,7.2,0.00049,"Server-Side Request Forgery (SSRF) vulnerability in Paytm Paytm Payment Gateway.This issue affects Paytm Payment Gateway: from n/a through 2.7.0.
+CVE-2022-45362,6.5,0.00049,"Server-Side Request Forgery (SSRF) vulnerability in Paytm Paytm Payment Gateway.This issue affects Paytm Payment Gateway: from n/a through 2.7.0.
 
 ",2023-12-07 11:15:07.260,Nuclei
 CVE-2022-45805,9.8,0.00547,"Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Paytm Paytm Payment Gateway paytm-payments allows SQL Injection.This issue affects Paytm Payment Gateway: from n/a through 2.7.3.
