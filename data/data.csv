@@ -5375,7 +5375,7 @@ CVE-2022-45038,5.4,0.00092,A cross-site scripting (XSS) vulnerability in /admin/
 CVE-2022-45362,6.5,0.00177,"Server-Side Request Forgery (SSRF) vulnerability in Paytm Paytm Payment Gateway.This issue affects Paytm Payment Gateway: from n/a through 2.7.0.
 
 ",2023-12-07 11:15:07.260,Nuclei
-CVE-2022-45365,7.1,0.00053,"Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Aleksandar Uroševi? Stock Ticker allows Reflected XSS.This issue affects Stock Ticker: from n/a through 3.23.2.
+CVE-2022-45365,6.1,0.00053,"Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Aleksandar Uroševi? Stock Ticker allows Reflected XSS.This issue affects Stock Ticker: from n/a through 3.23.2.
 
 ",2023-12-14 15:15:07.357,Nuclei
 CVE-2022-45805,9.8,0.00547,"Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Paytm Paytm Payment Gateway paytm-payments allows SQL Injection.This issue affects Paytm Payment Gateway: from n/a through 2.7.3.
