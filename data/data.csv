@@ -4371,20 +4371,20 @@ CVE-2021-26086,5.3,0.54993,"Affected versions of Atlassian Jira Server and Data 
 CVE-2021-26247,6.1,0.00255,"As an unauthenticated remote user, visit ""http://<CACTI_SERVER>/auth_changepassword.php?ref=<script>alert(1)</script>"" to successfully execute the JavaScript payload present in the ""ref"" URL parameter.",2022-01-19 21:15:08.237,Nuclei
 CVE-2021-26294,7.5,0.23427,"An issue was discovered in AfterLogic Aurora through 7.7.9 and WebMail Pro through 7.7.9. They allow directory traversal to read files (such as a data/settings/settings.xml file containing admin panel credentials), as demonstrated by dav/server.php/files/personal/%2e%2e when using the caldav_public_user account (with caldav_public_user as its password).",2021-03-07 04:15:12.957,Nuclei
 CVE-2021-26295,9.8,0.97447,Apache OFBiz has unsafe deserialization prior to 17.12.06. An unauthenticated attacker can use this vulnerability to successfully take over Apache OFBiz.,2021-03-22 12:15:13.877,EPSS/Metasploit/Nuclei
-CVE-2021-26411,7.5,0.91234,Internet Explorer Memory Corruption Vulnerability,2021-03-11 16:15:13.863,CISA
+CVE-2021-26411,8.8,0.91234,Internet Explorer Memory Corruption Vulnerability,2021-03-11 16:15:13.863,CISA
 CVE-2021-26475,6.1,0.00187,EPrints 3.4.2 exposes a reflected XSS opportunity in the via a cgi/cal URI.,2021-03-01 22:15:13.973,Nuclei
 CVE-2021-26598,5.3,0.00506,"ImpressCMS before 1.4.3 has Incorrect Access Control because include/findusers.php allows access by unauthenticated attackers (who are, by design, able to have a security token).",2022-03-28 01:15:06.840,Nuclei
 CVE-2021-26702,6.1,0.00187,EPrints 3.4.2 exposes a reflected XSS opportunity in the dataset parameter to the cgi/dataset_dictionary URI.,2021-03-01 22:15:14.117,Nuclei
 CVE-2021-26710,6.1,0.00114,A cross-site scripting (XSS) issue in the login panel in Redwood Report2Web 4.3.4.5 and 4.5.3 allows remote attackers to inject JavaScript via the signIn.do urll parameter.,2021-02-05 14:15:18.840,Nuclei
 CVE-2021-26723,6.1,0.07461,Jenzabar 9.2.x through 9.2.2 allows /ics?tool=search&query= XSS.,2021-02-06 06:15:12.287,Nuclei
 CVE-2021-26812,6.1,0.00464,"Cross Site Scripting (XSS) in the Jitsi Meet 2.7 through 2.8.3 plugin for Moodle via the ""sessionpriv.php"" module. This allows attackers to craft a malicious URL, which when clicked on by users, can inject javascript code to be run by the application.",2021-04-14 14:15:13.413,Nuclei
-CVE-2021-26855,9.8,0.9752,"Microsoft Exchange Server Remote Code Execution Vulnerability This CVE ID is unique from CVE-2021-26412, CVE-2021-26854, CVE-2021-26857, CVE-2021-26858, CVE-2021-27065, CVE-2021-27078.",2021-03-03 00:15:12.103,EPSS/CISA/Nuclei
-CVE-2021-26857,7.8,0.68495,"Microsoft Exchange Server Remote Code Execution Vulnerability This CVE ID is unique from CVE-2021-26412, CVE-2021-26854, CVE-2021-26855, CVE-2021-26858, CVE-2021-27065, CVE-2021-27078.",2021-03-03 00:15:12.167,CISA
-CVE-2021-26858,7.8,0.4087,"Microsoft Exchange Server Remote Code Execution Vulnerability This CVE ID is unique from CVE-2021-26412, CVE-2021-26854, CVE-2021-26855, CVE-2021-26857, CVE-2021-27065, CVE-2021-27078.",2021-03-03 00:15:12.227,CISA
+CVE-2021-26855,9.1,0.9752,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-03-03 00:15:12.103,EPSS/CISA/Nuclei
+CVE-2021-26857,7.8,0.68495,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-03-03 00:15:12.167,CISA
+CVE-2021-26858,7.8,0.4087,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-03-03 00:15:12.227,CISA
 CVE-2021-26914,8.1,0.63478,NetMotion Mobility before 11.73 and 12.x before 12.02 allows unauthenticated remote attackers to execute arbitrary code as SYSTEM because of Java deserialization in MvcUtil valueStringToObject.,2021-02-08 22:15:12.763,Metasploit
-CVE-2021-27059,6.8,0.02149,"Microsoft Office Remote Code Execution Vulnerability This CVE ID is unique from CVE-2021-24108, CVE-2021-27057.",2021-03-11 16:15:17.583,CISA
-CVE-2021-27065,7.8,0.9708,"Microsoft Exchange Server Remote Code Execution Vulnerability This CVE ID is unique from CVE-2021-26412, CVE-2021-26854, CVE-2021-26855, CVE-2021-26857, CVE-2021-26858, CVE-2021-27078.",2021-03-03 00:15:12.307,EPSS/CISA/Metasploit
-CVE-2021-27085,7.5,0.0166,Internet Explorer Remote Code Execution Vulnerability,2021-03-11 16:15:18.677,CISA
+CVE-2021-27059,7.6,0.02149,Microsoft Office Remote Code Execution Vulnerability,2021-03-11 16:15:17.583,CISA
+CVE-2021-27065,7.8,0.9708,Microsoft Exchange Server Remote Code Execution Vulnerability,2021-03-03 00:15:12.307,EPSS/CISA/Metasploit
+CVE-2021-27085,8.8,0.0166,Internet Explorer Remote Code Execution Vulnerability,2021-03-11 16:15:18.677,CISA
 CVE-2021-27101,9.8,0.00761,Accellion FTA 9_12_370 and earlier is affected by SQL injection via a crafted Host header in a request to document_root.html. The fixed version is FTA_9_12_380 and later.,2021-02-16 21:15:13.077,CISA
 CVE-2021-27102,7.8,0.00083,Accellion FTA 9_12_411 and earlier is affected by OS command execution via a local web service call. The fixed version is FTA_9_12_416 and later.,2021-02-16 21:15:13.140,CISA
 CVE-2021-27103,9.8,0.01217,Accellion FTA 9_12_411 and earlier is affected by SSRF via a crafted POST request to wmProgressstat.html. The fixed version is FTA_9_12_416 and later.,2021-02-16 21:15:13.217,CISA
