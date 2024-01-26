@@ -6047,21 +6047,42 @@ With a specific request to
 
 webauth_operation.php
 
-that doesn't require authentication, an attacker is able to upload arbitrary files via J-Web, leading to a loss of 
+that doesn't require authentication, an attacker is able to upload and download arbitrary files via J-Web, leading to a loss of 
 
-integrity
-
-for a certain part of the file system, which may allow chaining to other vulnerabilities.
+integrity or confidentiality, which may allow chaining to other vulnerabilities.
 
 
 This issue affects Juniper Networks Junos OS on SRX Series:
 
 
 
+  *  
+
+21.2 versions prior to 21.2R3-S8;
+  *  21.4 
+
+versions prior to 
+
+21.4R3-S6;
+  *  22.1 
+
+versions prior to 
+
+22.1R3-S5;
+  *  22.2 
+
+versions prior to 
+
+22.2R3-S3;
+  *  22.3 
+
+versions prior to 
+
+22.3R3-S2;
   *  22.4 versions prior to 22,4R2-S2, 22.4R3;
-  *  23.2 versions prior to 23.2R2.
+  *  23.2 versions prior to 
 
-
+23.2R1-S2, 23.2R2.
 
 
 ",2023-09-27 15:18:54.877,CISA
