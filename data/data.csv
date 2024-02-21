@@ -6190,6 +6190,13 @@ The file `users/functions.py` lines 18-49 show that the only verification check 
 Version 1.9.2 fixes this issue. Other remediation strategies include validating the file extension on the server side, not in client-side code; removing the use of Django's `serve` view and implement a secure controller for viewing uploaded avatar images; saving file content in the database rather than on the filesystem to mitigate against other file related vulnerabilities; and avoiding trusting user controlled inputs.",2024-01-23 23:15:08.100,Nuclei
 CVE-2023-4714,7.5,0.50923,A vulnerability was found in PlayTube 3.0.1 and classified as problematic. This issue affects some unknown processing of the component Redirect Handler. The manipulation leads to information disclosure. The attack may be initiated remotely. The identifier VDB-238577 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.,2023-09-01 20:15:08.890,Nuclei
 CVE-2023-47211,8.6,0.00164,A directory traversal vulnerability exists in the uploadMib functionality of ManageEngine OpManager 12.7.258. A specially crafted HTTP request can lead to arbitrary file creation. An attacker can send a malicious MiB file to trigger this vulnerability.,2024-01-08 15:15:25.287,Nuclei
+CVE-2023-47218,5.8,0.00043,"An OS command injection vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow users to execute commands via a network.
+
+We have already fixed the vulnerability in the following versions:
+QTS 5.1.5.2645 build 20240116 and later
+QuTS hero h5.1.5.2647 build 20240118 and later
+QuTScloud c5.1.5.2651 and later
+",2024-02-13 03:15:07.700,Metasploit
 CVE-2023-47246,9.8,0.94354,"In SysAid On-Premise before 23.3.36, a path traversal vulnerability leads to code execution after an attacker writes a file to the Tomcat webroot, as exploited in the wild in November 2023.",2023-11-10 06:15:30.510,CISA/Nuclei
 CVE-2023-47565,8.8,0.01453,"An OS command injection vulnerability has been found to affect legacy QNAP VioStor NVR models running QVR Firmware 4.x. If exploited, the vulnerability could allow authenticated users to execute commands via a network.
 
