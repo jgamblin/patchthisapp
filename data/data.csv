@@ -6312,7 +6312,7 @@ CVE-2024-1709,10.0,0.00057,"ConnectWise ScreenConnect 23.9.7 and prior are affec
 
 critical systems.
 
-",2024-02-21 16:15:50.420,Nuclei
+",2024-02-21 16:15:50.420,CISA/Nuclei
 CVE-2024-21351,7.6,0.00566,Windows SmartScreen Security Feature Bypass Vulnerability,2024-02-13 18:15:51.333,CISA
 CVE-2024-21410,9.8,0.00712,Microsoft Exchange Server Elevation of Privilege Vulnerability,2024-02-13 18:15:59.680,CISA
 CVE-2024-21412,8.1,0.00875,Internet Shortcut Files Security Feature Bypass Vulnerability,2024-02-13 18:15:59.903,CISA
