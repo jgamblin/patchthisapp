@@ -6305,13 +6305,18 @@ CVE-2024-1061,9.8,0.00934,"The 'HTML5 Video Player' WordPress Plugin, version < 
 CVE-2024-1208,5.3,0.01024,"The LearnDash LMS plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 4.10.2 via API. This makes it possible for unauthenticated attackers to obtain access to quiz questions.",2024-02-05 22:16:07.977,Nuclei
 CVE-2024-1209,5.3,0.00945,"The LearnDash LMS plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 4.10.1 via direct file access due to insufficient protection of uploaded assignments. This makes it possible for unauthenticated attackers to obtain those uploads.",2024-02-05 22:16:08.143,Nuclei
 CVE-2024-1210,5.3,0.00945,"The LearnDash LMS plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 4.10.1 via API. This makes it possible for unauthenticated attackers to obtain access to quizzes.",2024-02-05 22:16:08.310,Nuclei
+CVE-2024-1708,8.4,0.00049,"ConnectWise ScreenConnect 23.9.7 and prior are affected by path-traversal vulnerability, which may allow an attacker 
+
+the ability to execute remote code or directly impact confidential data or critical systems.
+
+",2024-02-21 16:15:50.233,Metasploit
 CVE-2024-1709,10.0,0.93461,"ConnectWise ScreenConnect 23.9.7 and prior are affected by an Authentication Bypass Using an Alternate Path or Channel
 
  vulnerability, which may allow an attacker direct access to confidential information or 
 
 critical systems.
 
-",2024-02-21 16:15:50.420,CISA/Nuclei
+",2024-02-21 16:15:50.420,CISA/Metasploit/Nuclei
 CVE-2024-21351,7.6,0.00566,Windows SmartScreen Security Feature Bypass Vulnerability,2024-02-13 18:15:51.333,CISA
 CVE-2024-21410,9.8,0.00712,Microsoft Exchange Server Elevation of Privilege Vulnerability,2024-02-13 18:15:59.680,CISA
 CVE-2024-21412,8.1,0.00875,Internet Shortcut Files Security Feature Bypass Vulnerability,2024-02-13 18:15:59.903,CISA
