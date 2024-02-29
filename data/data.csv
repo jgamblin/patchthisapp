@@ -5626,6 +5626,7 @@ CVE-2023-29298,7.5,0.92136,"Adobe ColdFusion versions 2018u16 (and earlier), 202
 CVE-2023-29300,9.8,0.96353,"Adobe ColdFusion versions 2018u16 (and earlier), 2021u6 (and earlier) and 2023.0.0.330468 (and earlier) are affected by a Deserialization of Untrusted Data vulnerability that could result in Arbitrary code execution. Exploitation of this issue does not require user interaction.",2023-07-12 16:15:11.733,EPSS/CISA/Nuclei
 CVE-2023-29336,7.8,0.00147,Win32k Elevation of Privilege Vulnerability,2023-05-09 18:15:13.840,CISA
 CVE-2023-29357,9.8,0.33084,Microsoft SharePoint Server Elevation of Privilege Vulnerability,2023-06-14 00:15:09.903,CISA/Nuclei
+CVE-2023-29360,8.4,0.00161,Microsoft Streaming Service Elevation of Privilege Vulnerability,2023-06-14 00:15:10.067,CISA
 CVE-2023-29439,6.1,0.00092,Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in FooPlugins FooGallery plugin <= 2.2.35 versions.,2023-05-16 15:15:08.983,Nuclei
 CVE-2023-29489,6.1,0.00303,"An issue was discovered in cPanel before 11.109.9999.116. XSS can occur on the cpsrvd error page via an invalid webcall ID, aka SEC-669. The fixed versions are 11.109.9999.116, 11.108.0.13, 11.106.0.18, and 11.102.0.31.",2023-04-27 21:15:10.783,Nuclei
 CVE-2023-29492,9.8,0.03668,Novi Survey before 8.9.43676 allows remote attackers to execute arbitrary code on the server in the context of the service account. This does not provide access to stored survey or response data.,2023-04-11 05:15:07.393,CISA
