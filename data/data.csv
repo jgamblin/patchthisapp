@@ -6330,10 +6330,14 @@ CVE-2024-21887,9.1,0.97322,"A command injection vulnerability in web components 
 CVE-2024-21893,8.2,0.96249,"A server-side request forgery vulnerability in the SAML component of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x) and Ivanti Neurons for ZTA allows an attacker to access certain restricted resources without authentication.",2024-01-31 18:15:47.437,EPSS/CISA/Metasploit/Nuclei
 CVE-2024-22024,8.3,0.00595,"An XML external entity or XXE vulnerability in the SAML component of Ivanti Connect Secure (9.x, 22.x), Ivanti Policy Secure (9.x, 22.x) and ZTA gateways which allows an attacker to access certain restricted resources without authentication.",2024-02-13 04:15:07.943,Nuclei
 CVE-2024-22319,9.8,0.29467,"
-IBM Operational Decision Manager 8.10.3, 8.10.4, 8.10.5.1, 8.11, 8.11.0.1, and 8.12.0.1 is susceptible to remote code execution attack via JNDI injection when passing an unchecked argument to a certain API.  IBM X-Force ID:  279145.
+
+
+IBM Operational Decision Manager 8.10.3, 8.10.4, 8.10.5.1, 8.11, 8.11.0.1, 8.11.1 and 8.12.0.1 is susceptible to remote code execution attack via JNDI injection when passing an unchecked argument to a certain API. IBM X-Force ID: 279145.
+
+
 
 ",2024-02-02 03:15:10.573,Nuclei
-CVE-2024-22320,8.8,0.38316,"IBM Operational Decision Manager 8.10.3, 8.10.4, 8.10.5.1, 8.11, 8.11.0.1, and 8.12.0.1 could allow a remote authenticated attacker to execute arbitrary code on the system, caused by an unsafe deserialization. By sending specially crafted request, an attacker could exploit this vulnerability to execute arbitrary code in the context of SYSTEM.  IBM X-Force ID:  279146.",2024-02-02 03:15:10.780,Nuclei
+CVE-2024-22320,8.8,0.38316,"IBM Operational Decision Manager 8.10.3 could allow a remote authenticated attacker to execute arbitrary code on the system, caused by an unsafe deserialization. By sending specially crafted request, an attacker could exploit this vulnerability to execute arbitrary code in the context of SYSTEM.  IBM X-Force ID:  279146.",2024-02-02 03:15:10.780,Nuclei
 CVE-2024-23222,8.8,0.00081,"A type confusion issue was addressed with improved checks. This issue is fixed in iOS 17.3 and iPadOS 17.3, macOS Sonoma 14.3, tvOS 17.3. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited.",2024-01-23 01:15:11.500,CISA
 CVE-2024-23225,7.8,0.00127,"A memory corruption issue was addressed with improved validation. This issue is fixed in iOS 16.7.6 and iPadOS 16.7.6, iOS 17.4 and iPadOS 17.4. An attacker with arbitrary kernel read and write capability may be able to bypass kernel memory protections. Apple is aware of a report that this issue may have been exploited.",2024-03-05 20:16:01.370,CISA
 CVE-2024-23296,7.8,0.00105,A memory corruption issue was addressed with improved validation. This issue is fixed in iOS 17.4 and iPadOS 17.4. An attacker with arbitrary kernel read and write capability may be able to bypass kernel memory protections. Apple is aware of a report that this issue may have been exploited.,2024-03-05 20:16:01.553,CISA
