@@ -6307,6 +6307,7 @@ CVE-2024-1709,10.0,0.93461,"ConnectWise ScreenConnect 23.9.7 and prior are affec
 critical systems.
 
 ",2024-02-21 16:15:50.420,CISA/Metasploit/Nuclei
+CVE-2024-2054,0.0,0.00043,"The Artica-Proxy administrative web application will deserialize arbitrary PHP objects supplied by unauthenticated users and subsequently enable code execution as the ""www-data"" user.",2024-03-21 02:52:27.320,Metasploit
 CVE-2024-21338,7.8,0.00105,Windows Kernel Elevation of Privilege Vulnerability,2024-02-13 18:15:49.083,CISA
 CVE-2024-21351,7.6,0.00527,Windows SmartScreen Security Feature Bypass Vulnerability,2024-02-13 18:15:51.333,CISA
 CVE-2024-21410,9.8,0.01861,Microsoft Exchange Server Elevation of Privilege Vulnerability,2024-02-13 18:15:59.680,CISA
