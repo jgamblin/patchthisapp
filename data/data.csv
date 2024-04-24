@@ -6383,3 +6383,5 @@ CVE-2024-3273,9.8,0.83361,"** UNSUPPORTED WHEN ASSIGNED ** A vulnerability, whic
 CVE-2024-3400,10.0,0.95359,"A command injection as a result of arbitrary file creation vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software for specific PAN-OS versions and distinct feature configurations may enable an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.
 
 Cloud NGFW, Panorama appliances, and Prisma Access are not impacted by this vulnerability.",2024-04-12 08:15:06.230,EPSS/CISA/Metasploit/Nuclei
+CVE-2024-4040,9.8,0.00044,"A server side template injection vulnerability in CrushFTP in all versions before 10.7.1 and 11.1.0 on all platforms allows unauthenticated remote attackers to read files from the filesystem outside of the VFS Sandbox, bypass authentication to gain administrative access, and perform remote code execution on the server.
+",2024-04-22 20:15:07.803,CISA
