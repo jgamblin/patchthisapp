@@ -5037,7 +5037,9 @@ CVE-2022-31269,8.2,0.00284,Nortek Linear eMerge E3-Series devices through 0.32-0
 CVE-2022-31299,6.1,0.00243,Haraj v3.7 was discovered to contain a reflected cross-site scripting (XSS) vulnerability in the User Upgrade Form.,2022-06-16 22:15:07.983,Nuclei
 CVE-2022-31373,6.1,0.00088,SolarView Compact v6.0 was discovered to contain a cross-site scripting (XSS) vulnerability via the component Solar_AiConf.php.,2022-06-21 13:15:08.340,Nuclei
 CVE-2022-3142,8.8,0.00381,"The NEX-Forms WordPress plugin before 7.9.7 does not properly sanitise and escape user input before using it in SQL statements, leading to SQL injections. The attack can be executed by anyone who is permitted to view the forms statistics chart, by default administrators, however can be configured otherwise via the plugin settings.",2022-09-19 14:15:11.357,Nuclei
-CVE-2022-31474,7.5,0.01464,Directory Traversal vulnerability in iThemes BackupBuddy plugin 8.5.8.0 - 8.7.4.1 versions.,2023-03-13 14:15:12.507,Nuclei
+CVE-2022-31474,7.5,0.01464,"Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in iThemes BackupBuddy allows Path Traversal.This issue affects BackupBuddy: from 8.5.8.0 through 8.7.4.1.
+
+",2023-03-13 14:15:12.507,Nuclei
 CVE-2022-31499,9.8,0.71656,Nortek Linear eMerge E3-Series devices before 0.32-08f allow an unauthenticated attacker to inject OS commands via ReaderNo. NOTE: this issue exists because of an incomplete fix for CVE-2019-7256.,2022-08-25 23:15:08.177,Nuclei
 CVE-2022-31656,9.8,0.70435,"VMware Workspace ONE Access, Identity Manager and vRealize Automation contain an authentication bypass vulnerability affecting local domain users. A malicious actor with network access to the UI may be able to obtain administrative access without the need to authenticate.",2022-08-05 16:15:12.610,Nuclei
 CVE-2022-31660,7.8,0.00117,"VMware Workspace ONE Access, Identity Manager and vRealize Automation contains a privilege escalation vulnerability. A malicious actor with local access can escalate privileges to 'root'.",2022-08-05 16:15:12.777,Metasploit
@@ -6411,5 +6413,5 @@ CVE-2024-3400,10.0,0.95359,"A command injection as a result of arbitrary file cr
 
 Cloud NGFW, Panorama appliances, and Prisma Access are not impacted by this vulnerability.",2024-04-12 08:15:06.230,EPSS/CISA/Metasploit/Nuclei
 CVE-2024-4040,10.0,0.9074,"A server side template injection vulnerability in CrushFTP in all versions before 10.7.1 and 11.1.0 on all platforms allows unauthenticated remote attackers to read files from the filesystem outside of the VFS Sandbox, bypass authentication to gain administrative access, and perform remote code execution on the server.
-",2024-04-22 20:15:07.803,CISA/Nuclei
+",2024-04-22 20:15:07.803,CISA/Metasploit/Nuclei
 CVE-2024-4348,4.3,0.00065,"A vulnerability, which was classified as problematic, was found in osCommerce 4. Affected is an unknown function of the file /catalog/all-products. The manipulation of the argument cat leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-262488. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.",2024-04-30 22:15:07.870,Nuclei
