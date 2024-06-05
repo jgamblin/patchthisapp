@@ -6361,7 +6361,7 @@ CVE-2024-21626,8.6,0.05062,"runc is a CLI tool for spawning and running containe
 CVE-2024-21644,7.5,0.14751,"pyLoad is the free and open-source Download Manager written in pure Python. Any unauthenticated user can browse to a specific URL to expose the Flask config, including the `SECRET_KEY` variable. This issue has been patched in version 0.5.0b3.dev77.",2024-01-08 14:15:47.217,Nuclei
 CVE-2024-21645,5.3,0.0112,"pyLoad is the free and open-source Download Manager written in pure Python. A log injection vulnerability was identified in `pyload` allowing any unauthenticated actor to inject arbitrary messages into the logs gathered by `pyload`. Forged or otherwise, corrupted log files can be used to cover an attacker’s tracks or even to implicate another party in the commission of a malicious act. This vulnerability has been patched in version 0.5.0b3.dev77.
 ",2024-01-08 14:15:47.420,Nuclei
-CVE-2024-21683,0.0,0.00054,"This High severity RCE (Remote Code Execution) vulnerability was introduced in version 5.2 of Confluence Data Center and Server.
+CVE-2024-21683,8.8,0.00054,"This High severity RCE (Remote Code Execution) vulnerability was introduced in version 5.2 of Confluence Data Center and Server.
 
 This RCE (Remote Code Execution) vulnerability, with a CVSS Score of 8.3, allows an authenticated attacker to execute arbitrary code which has high impact to confidentiality, high impact to integrity, high impact to availability, and requires no user interaction. 
 
