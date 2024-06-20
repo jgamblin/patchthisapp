@@ -6456,7 +6456,7 @@ SolarWinds Serv-U was susceptible to a directory transversal vulnerability that 
 
 
 
-",2024-06-06 09:15:14.167,Nuclei
+",2024-06-06 09:15:14.167,Metasploit/Nuclei
 CVE-2024-29059,7.5,0.00931,.NET Framework Information Disclosure Vulnerability,2024-03-23 00:15:09.150,Nuclei
 CVE-2024-29269,0.0,0.00054,An issue discovered in Telesquare TLR-2005Ksh 1.0.0 and 1.1.4 allows attackers to run arbitrary system commands via the Cmd parameter.,2024-04-10 20:15:07.440,Nuclei
 CVE-2024-29745,5.5,0.00094,there is a possible Information Disclosure due to uninitialized data. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.,2024-04-05 20:15:08.253,CISA
