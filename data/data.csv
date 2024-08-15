@@ -6457,6 +6457,11 @@ CVE-2024-28734,6.1,0.00065,Cross Site Scripting vulnerability in Unit4 Financial
 CVE-2024-28741,0.0,0.00163,Cross Site Scripting vulnerability in EginDemirbilek NorthStar C2 v1 allows a remote attacker to execute arbitrary code via the login.php component.,2024-04-06 19:15:07.247,Metasploit
 CVE-2024-2876,9.8,0.00888,"The Email Subscribers by Icegram Express – Email Marketing, Newsletters, Automation for WordPress & WooCommerce plugin for WordPress is vulnerable to SQL Injection via the 'run' function of the 'IG_ES_Subscribers_Query' class in all versions up to, and including, 5.7.14 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",2024-05-02 17:15:20.463,Nuclei
 CVE-2024-2879,7.5,0.0041,The LayerSlider plugin for WordPress is vulnerable to SQL Injection via the ls_get_popup_markup action in versions 7.9.11 and 7.10.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.,2024-04-03 04:15:11.960,Nuclei
+CVE-2024-28986,9.8,0.00071,"SolarWinds Web Help Desk was found to be susceptible to a Java Deserialization Remote Code Execution vulnerability that, if exploited, would allow an attacker to run commands on the host machine. 
+
+While it was reported as an unauthenticated vulnerability, SolarWinds has been unable to reproduce it without authentication after thorough testing.  
+
+However, out of an abundance of caution, we recommend all Web Help Desk customers apply the patch, which is now available.",2024-08-13 23:15:16.627,CISA
 CVE-2024-28995,7.5,0.9587,"
 
 
