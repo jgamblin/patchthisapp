@@ -5109,6 +5109,7 @@ CVE-2022-38463,6.1,0.00174,ServiceNow through San Diego Patch 4b and Patch 6 all
 CVE-2022-38467,6.1,0.00081,Reflected Cross-Site Scripting (XSS) vulnerability in CRM Perks Forms – WordPress Form Builder <= 1.1.0 ver.,2023-01-14 11:15:09.067,Nuclei
 CVE-2022-38553,6.1,0.00212,Academy Learning Management System before v5.9.1 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the Search parameter.,2022-09-26 10:15:09.883,Nuclei
 CVE-2022-38637,9.8,0.02979,Hospital Management System v1.0 was discovered to contain multiple SQL injection vulnerabilities via the Username and Password parameters on the Login page.,2022-09-13 21:15:09.763,Nuclei
+CVE-2022-3869,6.1,0.00085,Code Injection in GitHub repository froxlor/froxlor prior to 0.10.38.2.,2022-11-05 14:15:09.580,Nuclei
 CVE-2022-38794,7.5,0.01056,Zaver through 2020-12-15 allows directory traversal via the GET /.. substring.,2022-08-27 21:15:08.890,Nuclei
 CVE-2022-38817,7.5,0.0132,Dapr Dashboard v0.1.0 through v0.10.0 is vulnerable to Incorrect Access Control that allows attackers to obtain sensitive data.,2022-10-03 13:15:11.030,Nuclei
 CVE-2022-38870,7.5,0.01561,Free5gc v3.2.1 is vulnerable to Information disclosure.,2022-10-25 17:15:55.773,Nuclei
@@ -6280,6 +6281,7 @@ to load arbitrary JavaScript code.
 
 ",2023-10-18 15:15:08.727,CISA
 CVE-2023-5830,9.8,0.00779,A vulnerability classified as critical has been found in ColumbiaSoft Document Locator. This affects an unknown part of the file /api/authentication/login of the component WebTools. The manipulation of the argument Server leads to improper authentication. It is possible to initiate the attack remotely. Upgrading to version 7.2 SP4 and 2021.1 is able to address this issue. It is recommended to upgrade the affected component. The identifier VDB-243729 was assigned to this vulnerability.,2023-10-27 21:15:10.003,Nuclei
+CVE-2023-5863,6.1,0.00046,Cross-site Scripting (XSS) - Reflected in GitHub repository thorsten/phpmyfaq prior to 3.2.2.,2023-10-31 01:15:07.757,Nuclei
 CVE-2023-5914,6.1,0.00095,  Cross-site scripting (XSS),2024-01-17 21:15:11.413,Nuclei
 CVE-2023-5991,9.8,0.31779,"The Hotel Booking Lite WordPress plugin before 4.8.5 does not validate file paths provided via user input, as well as does not have proper CSRF and authorisation checks, allowing unauthenticated users to download and delete arbitrary files on the server",2023-12-26 19:15:08.213,Nuclei
 CVE-2023-6018,9.8,0.87085,An attacker can overwrite any file on the server hosting MLflow without any authentication.,2023-11-16 16:15:34.880,Nuclei
@@ -6650,6 +6652,7 @@ CVE-2024-5315,9.1,0.00049,"Vulnerabilities in Dolibarr ERP - CRM that affect ver
 viewstatut in /dolibarr/commande/list.php.",2024-05-24 10:15:11.197,Nuclei
 CVE-2024-5522,6.5,0.00053,"The HTML5 Video Player  WordPress plugin before 2.5.27 does not sanitize and escape a parameter from a REST route before using it in a SQL statement, allowing unauthenticated users to perform SQL injection attacks",2024-06-20 06:15:10.197,Nuclei
 CVE-2024-5806,9.1,0.00499,"Improper Authentication vulnerability in Progress MOVEit Transfer (SFTP module) can lead to Authentication Bypass.This issue affects MOVEit Transfer: from 2023.0.0 before 2023.0.11, from 2023.1.0 before 2023.1.6, from 2024.0.0 before 2024.0.2.",2024-06-25 15:15:15.850,Metasploit
+CVE-2024-5936,0.0,0.00061,"An open redirect vulnerability exists in imartinez/privategpt version 0.5.0 due to improper handling of the 'file' parameter. This vulnerability allows attackers to redirect users to a URL specified by user-controlled input without proper validation or sanitization. The impact of this vulnerability includes potential phishing attacks, malware distribution, and credential theft.",2024-06-27 19:15:18.317,Nuclei
 CVE-2024-5947,6.5,0.00066,"Deep Sea Electronics DSE855 Configuration Backup Missing Authentication Information Disclosure Vulnerability. This vulnerability allows network-adjacent attackers to disclose sensitive information on affected installations of Deep Sea Electronics DSE855 devices. Authentication is not required to exploit this vulnerability.
 
 The specific flaw exists within the web-based UI. The issue results from the lack of authentication prior to allowing access to functionality. An attacker can leverage this vulnerability to disclose stored credentials, leading to further compromise. Was ZDI-CAN-22679.",2024-06-13 20:15:16.277,Nuclei
