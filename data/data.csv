@@ -6553,7 +6553,7 @@ CVE-2024-29272,6.5,0.00054,"Arbitrary File Upload vulnerability in VvvebJs befor
 CVE-2024-29510,6.3,0.00722,"Artifex Ghostscript before 10.03.1 allows memory corruption, and SAFER sandbox bypass, via format string injection with a uniprint device.",2024-07-03 19:15:03.320,Metasploit
 CVE-2024-29745,5.5,0.00094,there is a possible Information Disclosure due to uninitialized data. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.,2024-04-05 20:15:08.253,CISA
 CVE-2024-29748,7.8,0.00083,there is a possible way to bypass  due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.,2024-04-05 20:15:08.407,CISA
-CVE-2024-29824,0.0,0.00067,An unspecified SQL Injection vulnerability in Core server of Ivanti EPM 2022 SU5 and prior allows an unauthenticated attacker within the same network to execute arbitrary code.,2024-05-31 18:15:11.177,Metasploit/Nuclei
+CVE-2024-29824,0.0,0.00067,An unspecified SQL Injection vulnerability in Core server of Ivanti EPM 2022 SU5 and prior allows an unauthenticated attacker within the same network to execute arbitrary code.,2024-05-31 18:15:11.177,CISA/Metasploit/Nuclei
 CVE-2024-29868,9.1,0.00053,"Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG) vulnerability in Apache StreamPipes user self-registration and password recovery mechanism.
 This allows an attacker to guess the recovery token in a reasonable time and thereby to take over the attacked user's account.
 This issue affects Apache StreamPipes: from 0.69.0 through 0.93.0.
