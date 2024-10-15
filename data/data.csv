@@ -6527,7 +6527,7 @@ CVE-2024-28986,9.8,0.02618,"SolarWinds Web Help Desk was found to be susceptible
 While it was reported as an unauthenticated vulnerability, SolarWinds has been unable to reproduce it without authentication after thorough testing.  
 
 However, out of an abundance of caution, we recommend all Web Help Desk customers apply the patch, which is now available.",2024-08-13 23:15:16.627,CISA
-CVE-2024-28987,9.1,0.94156,"The SolarWinds Web Help Desk (WHD) software is affected by a hardcoded credential vulnerability, allowing remote unauthenticated user to access internal functionality and modify data.",2024-08-21 22:15:04.350,Nuclei
+CVE-2024-28987,9.1,0.94156,"The SolarWinds Web Help Desk (WHD) software is affected by a hardcoded credential vulnerability, allowing remote unauthenticated user to access internal functionality and modify data.",2024-08-21 22:15:04.350,CISA/Nuclei
 CVE-2024-28995,7.5,0.96178,"
 
 
@@ -6573,6 +6573,7 @@ CVE-2024-29988,8.8,0.00298,SmartScreen Prompt Security Feature Bypass Vulnerabil
 CVE-2024-30038,7.8,0.00112,Win32k Elevation of Privilege Vulnerability,2024-05-14 17:17:10.303,Metasploit
 CVE-2024-30040,8.8,0.00427,Windows MSHTML Platform Security Feature Bypass Vulnerability,2024-05-14 17:17:12.410,CISA
 CVE-2024-30051,7.8,0.00131,Windows DWM Core Library Elevation of Privilege Vulnerability,2024-05-14 17:17:21.763,CISA
+CVE-2024-30088,7.0,0.00043,Windows Kernel Elevation of Privilege Vulnerability,2024-06-11 17:15:56.810,CISA
 CVE-2024-30188,8.1,0.04445,"File read and write vulnerability in Apache DolphinScheduler ,  authenticated users can illegally access additional resource files.
 This issue affects Apache DolphinScheduler: from 3.1.0 before 3.2.2.
 
@@ -6758,6 +6759,7 @@ This issue affects Apache OFBiz: before 18.12.16.
 
 Users are recommended to upgrade to version 18.12.16, which fixes the issue.",2024-09-04 09:15:04.397,Nuclei
 CVE-2024-45241,7.5,0.00087,"A traversal vulnerability in GeneralDocs.aspx in CentralSquare CryWolf (False Alarm Management) through 2024-08-09 allows unauthenticated attackers to read files outside of the working web directory via the rpt parameter, leading to the disclosure of sensitive information.",2024-08-26 07:15:04.273,Nuclei
+CVE-2024-45256,9.8,0.00045,An arbitrary file write issue in the exfiltration endpoint in BYOB (Build Your Own Botnet) 2.0 allows attackers to overwrite SQLite databases and bypass authentication via an unauthenticated HTTP request with a crafted parameter. This occurs in file_add in api/files/routes.py.,2024-08-26 07:15:04.420,Metasploit
 CVE-2024-45388,7.5,0.0062,"Hoverfly is a lightweight service virtualization/ API simulation / API mocking tool for developers and testers. The `/api/v2/simulation` POST handler allows users to create new simulation views from the contents of a user-specified file. This feature can be abused by an attacker to read arbitrary files from the Hoverfly server. Note that, although the code prevents absolute paths from being specified, an attacker can escape out of the `hf.Cfg.ResponsesBodyFilesPath` base path by using `../` segments and reach any arbitrary files. This issue was found using the Uncontrolled data used in path expression CodeQL query for python. Users are advised to make sure the final path (`filepath.Join(hf.Cfg.ResponsesBodyFilesPath, filePath)`) is contained within the expected base path (`filepath.Join(hf.Cfg.ResponsesBodyFilesPath, ""/"")`). This issue is also tracked as GHSL-2023-274.",2024-09-02 18:15:38.063,Nuclei
 CVE-2024-45440,5.3,0.00255,core/authorize.php in Drupal 11.x-dev allows Full Path Disclosure (even when error logging is None) if the value of hash_salt is file_get_contents of a file that does not exist.,2024-08-29 11:15:27.083,Nuclei
 CVE-2024-4548,9.8,0.0029,"An SQLi vulnerability exists in Delta Electronics DIAEnergie v1.10.1.8610 and prior when CEBC.exe processes a 'RecalculateHDMWYC' message, which is split into 4 fields using the '~' character as the separator. An unauthenticated remote attacker can perform SQLi via the fourth field.",2024-05-06 14:15:08.533,Metasploit
@@ -6874,3 +6876,4 @@ CVE-2024-9379,7.2,0.00756,SQL injection in the admin web console of Ivanti CSA b
 CVE-2024-9380,7.2,0.04637,An OS command injection vulnerability in the admin web console of Ivanti CSA before version 5.0.2 allows a remote authenticated attacker with admin privileges to obtain remote code execution.,2024-10-08 17:15:56.970,CISA
 CVE-2024-9463,0.0,0.00439,"An OS command injection vulnerability in Palo Alto Networks Expedition allows an unauthenticated attacker to run arbitrary OS commands as root in Expedition, resulting in disclosure of usernames, cleartext passwords, device configurations, and device API keys of PAN-OS firewalls.",2024-10-09 17:15:19.973,Nuclei
 CVE-2024-9465,0.0,0.0005,"An SQL injection vulnerability in Palo Alto Networks Expedition allows an unauthenticated attacker to reveal Expedition database contents, such as password hashes, usernames, device configurations, and device API keys. With this, attackers can also create and read arbitrary files on the Expedition system.",2024-10-09 17:15:20.287,Nuclei
+CVE-2024-9680,9.8,0.00045,"An attacker was able to achieve code execution in the content process by exploiting a use-after-free in Animation timelines. We have had reports of this vulnerability being exploited in the wild. This vulnerability affects Firefox < 131.0.2, Firefox ESR < 128.3.1, Firefox ESR < 115.16.1, Thunderbird < 131.0.1, Thunderbird < 128.3.1, and Thunderbird < 115.16.0.",2024-10-09 13:15:12.090,CISA
