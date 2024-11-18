@@ -5319,6 +5319,7 @@ Hitachi Vantara Pentaho Business Analytics Server versions before 9.4.0.1 and 9.
 ",2023-04-03 19:15:07.047,Metasploit
 CVE-2022-44290,9.8,0.01746,webTareas 2.4p5 was discovered to contain a SQL injection vulnerability via the id parameter in deleteapprovalstages.php.,2022-12-02 20:15:13.880,Nuclei
 CVE-2022-44291,9.8,0.01746,webTareas 2.4p5 was discovered to contain a SQL injection vulnerability via the id parameter in phasesets.php.,2022-12-02 20:15:13.950,Nuclei
+CVE-2022-44356,7.5,0.00209,WAVLINK Quantum D4G (WL-WN531G3) running firmware versions M31G3.V5030.201204 and M31G3.V5030.200325 has an access control issue which allows unauthenticated attackers to download configuration data and log files.,2022-11-29 17:15:11.313,Nuclei
 CVE-2022-4447,9.8,0.06432,"The Fontsy WordPress plugin through 1.8.6 does not properly sanitize and escape a parameter before using it in a SQL statement via an AJAX action available to unauthenticated users, leading to a SQL injection.",2023-01-16 16:15:11.817,Nuclei
 CVE-2022-44698,5.4,0.02303,Windows SmartScreen Security Feature Bypass Vulnerability,2022-12-13 19:15:14.403,CISA
 CVE-2022-44877,9.8,0.97243,login/index.php in CWP (aka Control Web Panel or CentOS Web Panel) 7 before 0.9.8.1147 allows remote attackers to execute arbitrary OS commands via shell metacharacters in the login parameter.,2023-01-05 23:15:09.150,Metasploit/Nuclei/EPSS/CISA
@@ -5380,7 +5381,9 @@ IBM Aspera Faspex 4.4.2 Patch Level 1 and earlier could allow a remote attacker 
 
 ",2023-02-17 16:15:10.873,Nuclei/EPSS/CISA
 CVE-2022-48012,6.1,0.001,Opencats v0.9.7 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the component /opencats/index.php?m=settings&a=ajax_tags_upd.,2023-01-27 18:15:15.463,Nuclei
+CVE-2022-48164,7.5,0.00227,An access control issue in the component /cgi-bin/ExportLogs.sh of Wavlink WL-WN533A8 M33A8.V5030.190716 allows unauthenticated attackers to download configuration data and log files and obtain admin credentials.,2023-02-06 14:15:09.167,Nuclei
 CVE-2022-48165,7.5,0.04882,An access control issue in the component /cgi-bin/ExportLogs.sh of Wavlink WL-WN530H4 M30H4.V5030.210121 allows unauthenticated attackers to download configuration data and log files and obtain admin credentials.,2023-02-03 21:15:10.890,Nuclei
+CVE-2022-48166,7.5,0.00209,An access control issue in Wavlink WL-WN530HG4 M30HG4.V5030.201217 allows unauthenticated attackers to download configuration data and log files and obtain admin credentials.,2023-02-06 22:15:09.553,Nuclei
 CVE-2022-48197,6.1,0.00609,"Reflected cross-site scripting (XSS) exists in Sandbox examples in the YUI2 repository. The download distributions, TreeView component and the YUI Javascript library overall are not affected. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.",2023-01-02 16:15:10.997,Nuclei
 CVE-2022-48618,7.0,0.00346,"The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.1, watchOS 9.2, iOS 16.2 and iPadOS 16.2, tvOS 16.2. An attacker with arbitrary read and write capability may be able to bypass Pointer Authentication. Apple is aware of a report that this issue may have been exploited against versions of iOS released before iOS 15.7.1.",2024-01-09 18:15:45.120,CISA
 CVE-2022-4897,6.1,0.00432,"The BackupBuddy WordPress plugin before 8.8.3 does not sanitise and escape some parameters before outputting them back in various places, leading to Reflected Cross-Site Scripting",2023-02-21 09:15:11.827,Nuclei
@@ -6813,7 +6816,7 @@ CVE-2024-3822,0.0,0.00053,"The Base64 Encoder/Decoder WordPress plugin through 0
 CVE-2024-38226,7.3,0.00051,Microsoft Publisher Security Feature Bypass Vulnerability,2024-09-10 17:15:25.267,CISA
 CVE-2024-38288,7.2,0.00324,A command-injection issue in the Certificate Signing Request (CSR) functionality in R-HUB TurboMeeting through 8.x allows authenticated attackers with administrator privileges to execute arbitrary commands on the underlying server as root.,2024-07-25 20:15:04.953,Nuclei
 CVE-2024-38289,9.8,0.00779,"A boolean-based SQL injection issue in the Virtual Meeting Password (VMP) endpoint in R-HUB TurboMeeting through 8.x allows unauthenticated remote attackers to extract hashed passwords from the database, and authenticate to the application, via crafted SQL input.",2024-07-25 20:15:05.017,Nuclei
-CVE-2024-38472,7.5,0.0005,"SSRF in Apache HTTP Server on Windows allows to potentially leak NTML hashes to a malicious server via SSRF and malicious requests or content 
+CVE-2024-38472,7.5,0.0005,"SSRF in Apache HTTP Server on Windows allows to potentially leak NTLM hashes to a malicious server via SSRF and malicious requests or content 
 Users are recommended to upgrade to version 2.4.60 which fixes this issue.  Note: Existing configurations that access UNC paths will have to configure new directive ""UNCList"" to allow access during request processing.",2024-07-01 19:15:04.563,Nuclei
 CVE-2024-38473,8.1,0.00054,"Encoding problem in mod_proxy in Apache HTTP Server 2.4.59 and earlier allows request URLs with incorrect encoding to be sent to backend services, potentially bypassing authentication via crafted requests.
 Users are recommended to upgrade to version 2.4.60, which fixes this issue.",2024-07-01 19:15:04.657,Nuclei
