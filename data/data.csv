@@ -6470,7 +6470,7 @@ The risk of this issue is greatly reduced if you secure access to the management
 
 This issue is applicable only to PAN-OS 10.2, PAN-OS 11.0, PAN-OS 11.1, and PAN-OS 11.2 software.
 
-Cloud NGFW and Prisma Access are not impacted by this vulnerability.",2024-11-18 16:15:11.683,EPSS/CISA
+Cloud NGFW and Prisma Access are not impacted by this vulnerability.",2024-11-18 16:15:11.683,Nuclei/EPSS/CISA
 CVE-2024-0195,9.8,0.94665,"A vulnerability, which was classified as critical, was found in spider-flow 0.4.3. Affected is the function FunctionService.saveFunction of the file src/main/java/org/spiderflow/controller/FunctionController.java. The manipulation leads to code injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-249510 is the identifier assigned to this vulnerability.",2024-01-02 21:15:10.003,Nuclei
 CVE-2024-0200,9.8,0.0644,"An unsafe reflection vulnerability was identified in GitHub Enterprise Server that could lead to reflection injection. This vulnerability could lead to the execution of user-controlled methods and remote code execution. To exploit this bug, an actor would need to be logged into an account on the GHES instance with the organization owner role. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12 and was fixed in versions 3.8.13, 3.9.8, 3.10.5, and 3.11.3. This vulnerability was reported via the GitHub Bug Bounty program.
 
