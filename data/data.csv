@@ -6899,6 +6899,13 @@ CVE-2024-52433,9.8,0.01909,Deserialization of Untrusted Data vulnerability in Mi
 CVE-2024-5274,9.6,0.00821,Type Confusion in V8 in Google Chrome prior to 125.0.6422.112 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High),2024-05-28 15:15:10.443,CISA
 CVE-2024-5276,9.8,0.00174,"A SQL Injection vulnerability in Fortra FileCatalyst Workflow allows an attacker to modify application data.  Likely impacts include creation of administrative users and deletion or modification of data in the application database. Data exfiltration via SQL injection is not possible using this vulnerability. Successful unauthenticated exploitation requires a Workflow system with anonymous access enabled, otherwise an authenticated user is required. This issue affects all versions of FileCatalyst Workflow from 5.1.6 Build 135 and earlier.",2024-06-25 20:15:14.013,Metasploit/Nuclei
 CVE-2024-52875,8.8,0.00053,"An issue was discovered in GFI Kerio Control 9.2.5 through 9.4.5. The dest GET parameter passed to the /nonauth/addCertException.cs and /nonauth/guestConfirm.cs and /nonauth/expiration.cs pages is not properly sanitized before being used to generate a Location HTTP header in a 302 HTTP response. This can be exploited to perform Open Redirect or HTTP Response Splitting attacks, which in turn lead to Reflected Cross-Site Scripting (XSS). Remote command execution can be achieved by leveraging the upgrade feature in the admin interface.",2025-01-31 08:15:07.827,Nuclei
+CVE-2024-53104,7.8,0.00044,"In the Linux kernel, the following vulnerability has been resolved:
+
+media: uvcvideo: Skip parsing frames of type UVC_VS_UNDEFINED in uvc_parse_format
+
+This can lead to out of bounds writes since frames of this type were not
+taken into account when calculating the size of the frames buffer in
+uvc_parse_streaming.",2024-12-02 08:15:08.687,CISA
 CVE-2024-5315,9.1,0.00059,"Vulnerabilities in Dolibarr ERP - CRM that affect version 9.0.1 and allow SQL injection. These vulnerabilities could allow a remote attacker to send a specially crafted SQL query to the system and retrieve all the information stored in the database through the parameters 
 
 viewstatut in /dolibarr/commande/list.php.",2024-05-24 10:15:11.197,Nuclei
