@@ -7,7 +7,6 @@ on:
   schedule: 
     - cron: "0 */6 * * *" 
 
-# This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
   update-list:
     runs-on: ubuntu-24.04
@@ -19,16 +18,14 @@ jobs:
         architecture: 'x64'
 
     # Install dependencies
-
     - name: Install dependencies
       run: |
-        sudo apt-get install jupyter -y --fix-missing
-        python -m pip install nbconvert
-        python -m pip install --upgrade pip -r requirements.txt
+        python -m pip install --upgrade pip
+        python -m pip install jupyter nbconvert -r requirements.txt
         
     - name: Grab Needed Data
       run: |
-        sudo apt install unzip
+        sudo apt-get install unzip -y
         wget https://epss.cyentia.com/epss_scores-current.csv.gz -O epss_scores-current.csv.gz 
         gzip -f -d epss_scores-current.csv.gz  
         curl https://raw.githubusercontent.com/rapid7/metasploit-framework/master/db/modules_metadata_base.json | jq '.[]|{cve:.references[]|select(startswith("CVE-"))}| join(",")' > metasploit.txt
@@ -40,7 +37,14 @@ jobs:
       env:
         GH_TOKEN:  ${{ secrets.GH_TOKEN }}
       run: |
-         jupyter nbconvert  --to notebook --inplace --execute patchthisapp.ipynb
+         jupyter nbconvert --to notebook --inplace --execute patchthisapp.ipynb
+         
+    - name: Check for errors in notebook execution
+      run: |
+        if grep -q "Traceback" patchthisapp.ipynb; then
+          echo "Error found in notebook execution"
+          exit 1
+        fi
     
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
