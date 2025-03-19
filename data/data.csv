@@ -6673,7 +6673,7 @@ CVE-2025-24085,7.8,0.03313,"A use after free issue was addressed with improved m
 CVE-2025-24200,6.1,0.17678,"An authorization issue was addressed with improved state management. This issue is fixed in iPadOS 17.7.5, iOS 18.3.1 and iPadOS 18.3.1. A physical attack may disable USB Restricted Mode on a locked device. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals.",2025-02-10 19:15:40.107,CISA
 CVE-2025-24201,8.8,0.00132,"An out-of-bounds write issue was addressed with improved checks to prevent unauthorized actions. This issue is fixed in visionOS 2.3.2, iOS 18.3.2 and iPadOS 18.3.2, macOS Sequoia 15.3.2, Safari 18.3.1. Maliciously crafted web content may be able to break out of Web Content sandbox. This is a supplementary fix for an attack that was blocked in iOS 17.2. (Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 17.2.).",2025-03-11 18:15:30.190,CISA
 CVE-2025-24472,8.1,0.00193,"An Authentication Bypass Using an Alternate Path or Channel vulnerability [CWE-288] affecting FortiOS 7.0.0 through 7.0.16 and FortiProxy 7.2.0 through 7.2.12, 7.0.0 through 7.0.19 may allow a remote attacker to gain super-admin privileges via crafted CSF proxy requests.",2025-02-11 17:15:34.867,CISA
-CVE-2025-24813,0.0,0.35055,"Path Equivalence: 'file.Name' (Internal Dot) leading to Remote Code Execution and/or Information disclosure and/or malicious content added to uploaded files via write enabled Default Servlet in Apache Tomcat.
+CVE-2025-24813,9.8,0.35055,"Path Equivalence: 'file.Name' (Internal Dot) leading to Remote Code Execution and/or Information disclosure and/or malicious content added to uploaded files via write enabled Default Servlet in Apache Tomcat.
 
 This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.2, from 10.1.0-M1 through 10.1.34, from 9.0.0.M1 through 9.0.98.
 
@@ -6690,7 +6690,7 @@ If all of the following were true, a malicious user was able to       perform re
 - application was using Tomcat's file based session persistence with the default storage location
 - application included a library that may be leveraged in a deserialization attack
 
-Users are recommended to upgrade to version 11.0.3, 10.1.35 or 9.0.98, which fixes the issue.",2025-03-10 17:15:35.067,Nuclei
+Users are recommended to upgrade to version 11.0.3, 10.1.35 or 9.0.99, which fixes the issue.",2025-03-10 17:15:35.067,Nuclei
 CVE-2025-24865,10.0,0.48004,"The administrative web interface of 
 mySCADA myPRO Manager
 
