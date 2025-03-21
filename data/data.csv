@@ -6141,6 +6141,7 @@ CVE-2024-29988,8.8,0.76398,SmartScreen Prompt Security Feature Bypass Vulnerabil
 CVE-2024-30038,7.8,0.06321,Win32k Elevation of Privilege Vulnerability,2024-05-14 17:17:10.303,Metasploit
 CVE-2024-30040,8.8,0.67891,Windows MSHTML Platform Security Feature Bypass Vulnerability,2024-05-14 17:17:12.410,CISA
 CVE-2024-30051,7.8,0.56629,Windows DWM Core Library Elevation of Privilege Vulnerability,2024-05-14 17:17:21.763,CISA
+CVE-2024-30085,7.8,0.39317,Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability,2024-06-11 17:15:56.123,Metasploit
 CVE-2024-30088,7.0,0.84195,Windows Kernel Elevation of Privilege Vulnerability,2024-06-11 17:15:56.810,CISA
 CVE-2024-30188,8.1,0.56685,"File read and write vulnerability in Apache DolphinScheduler ,  authenticated users can illegally access additional resource files.
 This issue affects Apache DolphinScheduler: from 3.1.0 before 3.2.2.
