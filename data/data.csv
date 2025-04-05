@@ -6719,6 +6719,7 @@ This issue affects Junos OS: 
 CVE-2025-22224,9.3,0.24221,"VMware ESXi, and Workstation contain a TOCTOU (Time-of-Check Time-of-Use) vulnerability that leads to an out-of-bounds write. A malicious actor with local administrative privileges on a virtual machine may exploit this issue to execute code as the virtual machine's VMX process running on the host.",2025-03-04 12:15:33.687,CISA
 CVE-2025-22225,8.2,0.08446,VMware ESXi contains an arbitrary write vulnerability. A malicious actor with privileges within the VMX process may trigger an arbitrary kernel write leading to an escape of the sandbox.,2025-03-04 12:15:33.840,CISA
 CVE-2025-22226,7.1,0.08346,"VMware ESXi, Workstation, and Fusion contain an information disclosure vulnerability due to an out-of-bounds read in HGFS. A malicious actor with administrative privileges to a virtual machine may be able to exploit this issue to leak memory from the vmx process.",2025-03-04 12:15:33.973,CISA
+CVE-2025-22457,9.0,0.00515,"A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.6, Ivanti Policy Secure before version 22.7R1.4, and Ivanti ZTA Gateways before version 22.8R2.2 allows a remote unauthenticated attacker to achieve remote code execution.",2025-04-03 16:15:35.370,CISA
 CVE-2025-22896,8.6,0.17951,"mySCADA myPRO Manager
 
 
