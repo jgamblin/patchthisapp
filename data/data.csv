@@ -6507,6 +6507,33 @@ uvc_parse_streaming.",2024-12-02 08:15:08.687,CISA
 CVE-2024-5315,9.1,0.20026,"Vulnerabilities in Dolibarr ERP - CRM that affect version 9.0.1 and allow SQL injection. These vulnerabilities could allow a remote attacker to send a specially crafted SQL query to the system and retrieve all the information stored in the database through the parameters 
 
 viewstatut in /dolibarr/commande/list.php.",2024-05-24 10:15:11.197,Nuclei
+CVE-2024-53150,7.1,0.00014,"In the Linux kernel, the following vulnerability has been resolved:
+
+ALSA: usb-audio: Fix out of bounds reads when finding clock sources
+
+The current USB-audio driver code doesn't check bLength of each
+descriptor at traversing for clock descriptors.  That is, when a
+device provides a bogus descriptor with a shorter bLength, the driver
+might hit out-of-bounds reads.
+
+For addressing it, this patch adds sanity checks to the validator
+functions for the clock descriptor traversal.  When the descriptor
+length is shorter than expected, it's skipped in the loop.
+
+For the clock source and clock multiplier descriptors, we can just
+check bLength against the sizeof() of each descriptor type.
+OTOH, the clock selector descriptor of UAC2 and UAC3 has an array
+of bNrInPins elements and two more fields at its tail, hence those
+have to be checked in addition to the sizeof() check.",2024-12-24 12:15:23.117,CISA
+CVE-2024-53197,7.8,0.00058,"In the Linux kernel, the following vulnerability has been resolved:
+
+ALSA: usb-audio: Fix potential out-of-bound accesses for Extigy and Mbox devices
+
+A bogus device can provide a bNumConfigurations value that exceeds the
+initial value used in usb_get_configuration for allocating dev->config.
+
+This can lead to out-of-bounds accesses later, e.g. in
+usb_destroy_configuration.",2024-12-27 14:15:27.383,CISA
 CVE-2024-5334,0.0,0.21662,"A local file read vulnerability exists in the stitionai/devika repository, affecting the latest version. The vulnerability is due to improper handling of the 'snapshot_path' parameter in the '/api/get-browser-snapshot' endpoint. An attacker can exploit this vulnerability by crafting a request with a malicious 'snapshot_path' parameter, leading to arbitrary file read from the system. This issue impacts the security of the application by allowing unauthorized access to sensitive files on the server.",2024-06-27 18:15:20.223,Nuclei
 CVE-2024-53704,9.8,0.91491,An Improper Authentication vulnerability in the SSLVPN authentication mechanism allows a remote attacker to bypass authentication.,2025-01-09 07:15:27.203,Nuclei/CISA
 CVE-2024-53991,7.5,0.31223,"Discourse is an open source platform for community discussion. This vulnerability only impacts Discourse instances configured to use `FileStore::LocalStore` which means uploads and backups are stored locally on disk. If an attacker knows the name of the Discourse backup file, the attacker can trick nginx into sending the Discourse backup file with a well crafted request. This issue is patched in the latest stable, beta and tests-passed versions of Discourse. Users are advised to upgrade. Users unable to upgrade can either 1. Download all local backups on to another storage device, disable the `enable_backups` site setting and delete all backups until the site has been upgraded to pull in the fix. Or  2. Change the `backup_location` site setting to `s3` so that backups are stored and downloaded directly from S3.",2024-12-19 20:15:07.670,Nuclei
