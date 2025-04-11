@@ -6816,6 +6816,12 @@ CVE-2025-27218,5.3,0.62692,Sitecore Experience Manager (XM) and Experience Platf
 CVE-2025-2748,6.5,0.00554,"The Kentico Xperience application does not fully validate or filter files uploaded via the multiple-file upload functionality, which allows for stored XSS.This issue affects Kentico Xperience through 13.0.178.",2025-03-24 19:15:52.270,Nuclei
 CVE-2025-2783,8.3,0.13075,Incorrect handle provided in unspecified circumstances in Mojo in Google Chrome on Windows prior to 134.0.6998.177 allowed a remote attacker to perform a sandbox escape via a malicious file. (Chromium security severity: High),2025-03-26 16:15:23.693,CISA
 CVE-2025-29085,9.8,0.07532,SQL injection vulnerability in vipshop Saturn v.3.5.1 and before allows a remote attacker to execute arbitrary code via /console/dashboard/executorCount?zkClusterKey component.,2025-04-02 21:15:32.707,Nuclei
+CVE-2025-2945,9.9,0.00256,"Remote Code Execution security vulnerability in pgAdmin 4  (Query Tool and Cloud Deployment modules).
+
+The vulnerability is associated with the 2 POST endpoints; /sqleditor/query_tool/download, where the query_commited parameter and /cloud/deploy endpoint, where the high_availability parameter is unsafely passed to the Python eval() function, allowing arbitrary code execution.
+
+
+This issue affects pgAdmin 4: before 9.2.",2025-04-03 13:15:43.240,Metasploit
 CVE-2025-29824,7.8,0.18058,Use after free in Windows Common Log File System Driver allows an authorized attacker to elevate privileges locally.,2025-04-08 18:16:08.340,CISA
 CVE-2025-29927,9.1,0.89241,"Next.js is a React framework for building full-stack web applications. Starting in version 1.11.4 and prior to versions 12.3.5, 13.5.9, 14.2.25, and 15.2.3, it is possible to bypass authorization checks within a Next.js application, if the authorization check occurs in middleware. If patching to a safe version is infeasible, it is recommend that you prevent external user requests which contain the x-middleware-subrequest header from reaching your Next.js application. This vulnerability is fixed in 12.3.5, 13.5.9, 14.2.25, and 15.2.3.",2025-03-21 15:15:42.660,Nuclei
 CVE-2025-30066,8.6,0.63872,"tj-actions changed-files before 46 allows remote attackers to discover secrets by reading actions logs. (The tags v1 through v45.0.7 were affected on 2025-03-14 and 2025-03-15 because they were modified by a threat actor to point at commit 0e58ed8, which contained malicious updateFeatures code.)",2025-03-15 06:15:12.193,CISA
