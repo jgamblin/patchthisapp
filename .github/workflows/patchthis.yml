@@ -26,7 +26,7 @@ jobs:
     - name: Grab Needed Data
       run: |
         sudo apt-get install unzip -y
-        wget https://epss.cyentia.com/epss_scores-current.csv.gz -O epss_scores-current.csv.gz 
+        wget https://epss.empiricalsecurity.com/epss_scores-current.csv.gz -O epss_scores-current.csv.gz 
         gzip -f -d epss_scores-current.csv.gz  
         curl https://raw.githubusercontent.com/rapid7/metasploit-framework/master/db/modules_metadata_base.json | jq '.[]|{cve:.references[]|select(startswith("CVE-"))}| join(",")' > metasploit.txt
         curl https://raw.githubusercontent.com/projectdiscovery/nuclei-templates/main/cves.json | jq -r .ID > nuclei.txt
