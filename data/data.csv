@@ -6777,7 +6777,7 @@ CVE-2025-22224,9.3,0.54753,"VMware ESXi, and Workstation contain a TOCTOU (Time
 CVE-2025-22225,8.2,0.09937,VMware ESXi contains an arbitrary write vulnerability. A malicious actor with privileges within the VMX process may trigger an arbitrary kernel write leading to an escape of the sandbox.,2025-03-04 12:15:33.840,CISA
 CVE-2025-22226,7.1,0.04717,"VMware ESXi, Workstation, and Fusion contain an information disclosure vulnerability due to an out-of-bounds read in HGFS. A malicious actor with administrative privileges to a virtual machine may be able to exploit this issue to leak memory from the vmx process.",2025-03-04 12:15:33.973,CISA
 CVE-2025-22457,9.0,0.11035,"A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.6, Ivanti Policy Secure before version 22.7R1.4, and Ivanti ZTA Gateways before version 22.8R2.2 allows a remote unauthenticated attacker to achieve remote code execution.",2025-04-03 16:15:35.370,CISA
-CVE-2025-2264,7.5,0.43951,"A Path Traversal Information Disclosure vulnerability exists in ""Sante PACS Server.exe"". An unauthenticated remote attacker can exploit it to download arbitrary files on the disk drive where the application is installed.",2025-03-13 17:15:38.787,Nuclei
+CVE-2025-2264,7.5,0.43951,"A Path Traversal Information Disclosure vulnerability exists in ""Sante PACS Server.exe"". An unauthenticated remote attacker can exploit it to download arbitrary files on the disk drive where the application is installed.",2025-03-13 17:15:38.787,Metasploit/Nuclei
 CVE-2025-22896,8.6,0.31173,"mySCADA myPRO Manager
 
 
