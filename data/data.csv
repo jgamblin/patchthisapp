@@ -6953,7 +6953,7 @@ CVE-2025-34028,10.0,0.63855,"The Commvault Command Center Innovation Release all
 
 
 
-This issue affects Command Center Innovation Release: 11.38.",2025-04-22 17:16:48.027,Nuclei/CISA
+This issue affects Command Center Innovation Release: 11.38.0 to 11.38.20. The vulnerability is fixed in 11.38.20 with SP38-CU20-433 and SP38-CU20-436 and also fixed in 11.38.25 with SP38-CU25-434 and SP38-CU25-438.",2025-04-22 17:16:48.027,Nuclei/CISA
 CVE-2025-3928,8.8,0.15076,"Commvault Web Server has an unspecified vulnerability that can be exploited by a remote, authenticated attacker. According to the Commvault advisory: ""Webservers can be compromised through bad actors creating and executing webshells."" Fixed in version 11.36.46, 11.32.89, 11.28.141, and 11.20.217 for Windows and Linux platforms. This vulnerability was added to the CISA Known Exploited Vulnerabilities (KEV) Catalog on 2025-04-28.",2025-04-25 16:15:27.817,CISA
 CVE-2025-4123,7.6,0.03175,"A cross-site scripting (XSS) vulnerability exists in Grafana caused by combining a client path traversal and open redirect. This allows attackers to redirect users to a website that hosts a frontend plugin that will execute arbitrary JavaScript. This vulnerability does not require editor permissions and if anonymous access is enabled, the XSS will work. If the Grafana Image Renderer plugin is installed, it is possible to exploit the open redirect to achieve a full read SSRF.
 
