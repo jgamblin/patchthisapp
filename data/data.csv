@@ -5110,6 +5110,18 @@ CVE-2023-2766,5.3,0.91816,A vulnerability was found in Weaver OA 9.5 and classif
 CVE-2023-2779,6.1,0.17745,"The Social Share, Social Login and Social Comments WordPress plugin before 7.13.52 does not sanitise and escape a parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin.",2023-06-19 11:15:10.653,Nuclei
 CVE-2023-2780,9.8,0.87419,Path Traversal: '\..\filename' in GitHub repository mlflow/mlflow prior to 2.3.1.,2023-05-17 21:15:09.470,Nuclei
 CVE-2023-27847,9.8,0.77062,SQL injection vulnerability found in PrestaShop xipblog v.2.0.1 and before allow a remote attacker to gain privileges via the xipcategoryclass and xippostsclass components.,2023-03-27 16:15:10.083,Nuclei
+CVE-2023-27856,7.5,0.19658,"
+
+
+In affected versions, path traversal exists when processing a message of type 8
+
+ in Rockwell Automation's ThinManager ThinServer. 
+
+An unauthenticated remote attacker can exploit this vulnerability to download arbitrary files on the disk drive where ThinServer.exe is installed.
+
+ 
+
+",2023-03-22 00:15:12.810,Metasploit
 CVE-2023-27922,6.1,0.07483,Cross-site scripting vulnerability in Newsletter versions prior to 7.6.9 allows a remote unauthenticated attacker to inject an arbitrary script.,2023-05-23 02:15:09.907,Nuclei
 CVE-2023-2796,5.3,0.79039,"The EventON WordPress plugin before 2.1.2 lacks authentication and authorization in its eventon_ics_download ajax action, allowing unauthenticated visitors to access private and password protected Events by guessing their numeric id.",2023-07-10 16:15:51.497,Nuclei
 CVE-2023-27992,9.8,0.88459,"The pre-authentication command injection vulnerability in the Zyxel NAS326 firmware versions prior to V5.21(AAZF.14)C0, NAS540 firmware versions prior to V5.21(AATB.11)C0, and NAS542 firmware versions prior to V5.21(ABAG.11)C0 could allow an unauthenticated attacker to execute some operating system (OS) commands remotely by sending a crafted HTTP request.",2023-06-19 12:15:09.433,CISA
