@@ -1,0 +1,107 @@
+/* Modern CSS for PatchThisApp */
+
+:root {
+  --primary: #2d3748;
+  --accent: #3182ce;
+  --background: #f7fafc;
+  --text: #222;
+  --header-bg: #fff;
+  --footer-bg: #f1f1f1;
+  --border-radius: 8px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+header {
+  background: var(--header-bg);
+  padding: 2rem 1rem 1rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  background: var(--header-bg);
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  color: var(--accent);
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+footer {
+  background: var(--footer-bg);
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
