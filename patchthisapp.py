@@ -1,13 +1,12 @@
 # patchthisapp.py
 # Modernized: pathlib, type hints, argparse, modularization, logging, __main__ guard, file checks
 
-from datetime import date
 from pathlib import Path
 import argparse
 import json
 import logging
 import pandas as pd
-from typing import List, Dict, Any
+from typing import List, Dict
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -52,7 +51,7 @@ def load_epss(epss_path: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
     df['Source'] = 'EPSS'
     return df[['CVE', 'Source']], df_all
 
-def load_nvd_data(filename: Path) -> List[Dict[str, Any]]:
+def load_nvd_data(filename: Path) -> List[Dict[str, str]]:
     if not filename.exists():
         logging.error(f"Missing NVD file: {filename}")
         return []
@@ -63,7 +62,7 @@ def load_nvd_data(filename: Path) -> List[Dict[str, Any]]:
         logging.error(f"Error decoding JSON from file {filename}: {e}")
         return []
 
-def extract_entry_data(entry: Dict[str, Any]) -> Dict[str, Any]:
+def extract_entry_data(entry: Dict[str, str]) -> Dict[str, str]:
     fields = {
         'assigner': 'Missing_Data',
         'published_date': 'Missing_Data',

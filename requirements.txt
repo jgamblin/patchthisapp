@@ -1,11 +1,1 @@
-calplot
-folium
-geopy
-ipython
-itables
-jupyter-book
-matplotlib
-numpy
 pandas
-plotly
-seaborn
