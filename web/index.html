@@ -8,46 +8,111 @@
 </head>
 <body>
     <header>
-        <h1>PatchThisApp</h1>
-        <p class="subtitle">Prioritize your patching with curated, actionable vulnerability intelligence.</p>
+        <div class="header-content">
+            <h1>PatchThisApp</h1>
+            <p class="subtitle">Intelligent vulnerability prioritization for modern security teams</p>
+            <div class="header-stats">
+                <span class="stat">Updated Hourly</span>
+                <span class="stat">Open Source</span>
+                <span class="stat">Enterprise Ready</span>
+            </div>
+        </div>
     </header>
     <nav>
-        <a href="#welcome">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="https://github.com/jgamblin/patchthisapp" target="_blank">GitHub</a>
+        <div class="nav-container">
+            <a href="#welcome" class="nav-link">Overview</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="https://github.com/jgamblin/patchthisapp" target="_blank" class="nav-link nav-link-external">
+                <span>GitHub</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15,3 21,3 21,9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+        </div>
     </nav>
     <main>
-        <section id="welcome">
-            <h2>Welcome</h2>
-            <p>PatchThisApp helps organizations focus their patch management efforts by providing a curated, up-to-date list of high-priority CVEs. Our data is sourced from leading open-source intelligence platforms and refreshed hourly.</p>
-            <div class="features">
-                <div class="feature-card">
-                    <h3><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA KEV Catalog</a></h3>
-                    <p>Official list of known exploited vulnerabilities maintained by CISA.</p>
-                </div>
-                <div class="feature-card">
-                    <h3><a href="https://docs.rapid7.com/metasploit/modules/" target="_blank">Rapid7 Metasploit</a></h3>
-                    <p>Exploit modules for vulnerabilities, widely used by security professionals.</p>
-                </div>
-                <div class="feature-card">
-                    <h3><a href="https://github.com/projectdiscovery/nuclei-templates" target="_blank">Nuclei Templates</a></h3>
-                    <p>Automated vulnerability scanning templates from Project Discovery.</p>
-                </div>
-                <div class="feature-card">
-                    <h3><a href="https://www.first.org/epss/" target="_blank">EPSS</a></h3>
-                    <p>Exploit Prediction Scoring System for prioritizing patching based on risk.</p>
+        <section id="welcome" class="hero-section">
+            <div class="hero-content">
+                <h2>Focus Your Security Efforts</h2>
+                <p class="hero-description">Cut through the noise of thousands of CVEs. PatchThisApp delivers a curated, prioritized list of vulnerabilities that matter most to your organization.</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/jgamblin/patchthisapp/blob/main/data/data.csv" target="_blank" class="btn btn-primary">View Latest Data</a>
+                    <a href="https://github.com/jgamblin/patchthisapp" target="_blank" class="btn btn-secondary">Explore on GitHub</a>
                 </div>
             </div>
-            <p>Access the full, hourly-updated <a href="https://github.com/jgamblin/patchthisapp/blob/main/data/data.csv" target="_blank">CSV database</a> or <a href="https://github.com/jgamblin/patchthisapp">contribute on GitHub</a>.</p>
         </section>
-        <section id="about">
-            <h2>About</h2>
-            <p><strong>PatchThisApp</strong> is an open-source project by <a href="https://www.jerrygamblin.com" target="_blank">Jerry Gamblin</a>. Our mission is to aggregate and share the most relevant vulnerability intelligence, empowering organizations to patch smarter and faster.</p>
+        
+        <section class="data-sources">
+            <h2>Trusted Intelligence Sources</h2>
+            <p class="section-intro">Our data aggregates from the most reliable vulnerability intelligence platforms, updated hourly for maximum relevance.</p>
+            <div class="sources-grid">
+                <div class="source-card">
+                    <div class="source-icon">🛡️</div>
+                    <h3><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">CISA KEV Catalog</a></h3>
+                    <p>Known Exploited Vulnerabilities actively targeted by threat actors in the wild.</p>
+                </div>
+                <div class="source-card">
+                    <div class="source-icon">⚡</div>
+                    <h3><a href="https://docs.rapid7.com/metasploit/modules/" target="_blank">Rapid7 Metasploit</a></h3>
+                    <p>Battle-tested exploit modules used by security professionals worldwide.</p>
+                </div>
+                <div class="source-card">
+                    <div class="source-icon">🔍</div>
+                    <h3><a href="https://github.com/projectdiscovery/nuclei-templates" target="_blank">Nuclei Templates</a></h3>
+                    <p>Community-driven vulnerability detection templates for automated scanning.</p>
+                </div>
+                <div class="source-card">
+                    <div class="source-icon">📊</div>
+                    <h3><a href="https://www.first.org/epss/" target="_blank">EPSS Scoring</a></h3>
+                    <p>ML-driven exploit prediction scores for data-driven patching decisions.</p>
+                </div>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <p>Have questions or feedback? <a href="https://github.com/jgamblin/patchthisapp/issues" target="_blank">Open an issue on GitHub</a> or connect with Jerry on <a href="https://www.twitter.com/jgamblin" target="_blank">X (formerly Twitter)</a>.</p>
+        
+        <section id="about" class="about-section">
+            <h2>Built for Security Teams</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p><strong>PatchThisApp</strong> was created by <a href="https://www.jerrygamblin.com" target="_blank">Jerry Gamblin</a> to solve a critical problem: vulnerability fatigue. With thousands of CVEs published monthly, security teams need intelligent prioritization.</p>
+                    <p>Our open-source approach ensures transparency and community collaboration in building the most comprehensive vulnerability intelligence platform.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Monitoring</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Data Sources</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Open Source</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact-section">
+            <h2>Get Involved</h2>
+            <p>Join our community of security professionals working to improve vulnerability management for everyone.</p>
+            <div class="contact-links">
+                <a href="https://github.com/jgamblin/patchthisapp/issues" target="_blank" class="contact-link">
+                    <span class="contact-icon">💬</span>
+                    <span>Report Issues</span>
+                </a>
+                <a href="https://www.twitter.com/jgamblin" target="_blank" class="contact-link">
+                    <span class="contact-icon">🐦</span>
+                    <span>Follow on X</span>
+                </a>
+                <a href="https://github.com/jgamblin/patchthisapp" target="_blank" class="contact-link">
+                    <span class="contact-icon">⭐</span>
+                    <span>Star on GitHub</span>
+                </a>
+            </div>
         </section>
     </main>
     <footer>
