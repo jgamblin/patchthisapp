@@ -100,6 +100,32 @@
             position: sticky;
             top: 0;
             z-index: 10;
+            cursor: pointer;
+            user-select: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .data-table th:hover {
+            background: var(--border-light);
+        }
+
+        .data-table th.sortable {
+            position: relative;
+        }
+
+        .data-table th .sort-icon {
+            margin-left: 0.5rem;
+            opacity: 0.3;
+            transition: opacity 0.2s ease;
+        }
+
+        .data-table th.sort-asc .sort-icon,
+        .data-table th.sort-desc .sort-icon {
+            opacity: 1;
+        }
+
+        .data-table th.sort-desc .sort-icon {
+            transform: rotate(180deg);
         }
 
         .data-table td {
@@ -244,12 +270,42 @@
                 <table id="dataTable" class="data-table" style="display: none;">
                     <thead>
                         <tr>
-                            <th>CVE</th>
-                            <th>CVSS Score</th>
-                            <th>EPSS</th>
-                            <th>Description</th>
-                            <th>Published</th>
-                            <th>Source</th>
+                            <th class="sortable" data-column="CVE">
+                                CVE
+                                <svg class="sort-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 10l5 5 5-5"/>
+                                </svg>
+                            </th>
+                            <th class="sortable" data-column="CVSS Score">
+                                CVSS Score
+                                <svg class="sort-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 10l5 5 5-5"/>
+                                </svg>
+                            </th>
+                            <th class="sortable" data-column="EPSS">
+                                EPSS
+                                <svg class="sort-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 10l5 5 5-5"/>
+                                </svg>
+                            </th>
+                            <th class="sortable" data-column="Description">
+                                Description
+                                <svg class="sort-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 10l5 5 5-5"/>
+                                </svg>
+                            </th>
+                            <th class="sortable" data-column="Published">
+                                Published
+                                <svg class="sort-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 10l5 5 5-5"/>
+                                </svg>
+                            </th>
+                            <th class="sortable" data-column="Source">
+                                Source
+                                <svg class="sort-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M7 10l5 5 5-5"/>
+                                </svg>
+                            </th>
                         </tr>
                     </thead>
                     <tbody id="tableBody">
@@ -269,6 +325,7 @@
     <script>
         let allData = [];
         let filteredData = [];
+        let currentSort = { column: 'Published', direction: 'desc' };
 
         // Load CSV data
         async function loadData() {
@@ -283,7 +340,10 @@
                 
                 allData = data;
                 filteredData = data;
-                renderTable(data);
+                
+                // Sort by Published date (newest first) by default
+                sortData('Published', 'desc');
+                updateSortIndicators();
                 
                 document.getElementById('loadingMessage').style.display = 'none';
                 document.getElementById('dataTable').style.display = 'table';
@@ -330,6 +390,64 @@
             
             result.push(current.trim());
             return result;
+        }
+
+        // Sort data by column
+        function sortData(column, direction) {
+            currentSort = { column, direction };
+            
+            filteredData.sort((a, b) => {
+                let aVal = a[column] || '';
+                let bVal = b[column] || '';
+                
+                // Handle different data types
+                if (column === 'CVSS Score' || column === 'EPSS') {
+                    aVal = parseFloat(aVal) || 0;
+                    bVal = parseFloat(bVal) || 0;
+                } else if (column === 'Published') {
+                    aVal = new Date(aVal);
+                    bVal = new Date(bVal);
+                    // Handle invalid dates
+                    if (isNaN(aVal.getTime())) aVal = new Date(0);
+                    if (isNaN(bVal.getTime())) bVal = new Date(0);
+                } else {
+                    // String comparison
+                    aVal = aVal.toString().toLowerCase();
+                    bVal = bVal.toString().toLowerCase();
+                }
+                
+                let comparison = 0;
+                if (aVal < bVal) comparison = -1;
+                else if (aVal > bVal) comparison = 1;
+                
+                return direction === 'desc' ? -comparison : comparison;
+            });
+            
+            renderTable(filteredData);
+        }
+
+        // Update sort indicators in table headers
+        function updateSortIndicators() {
+            const headers = document.querySelectorAll('.data-table th.sortable');
+            headers.forEach(header => {
+                header.classList.remove('sort-asc', 'sort-desc');
+                if (header.dataset.column === currentSort.column) {
+                    header.classList.add(currentSort.direction === 'asc' ? 'sort-asc' : 'sort-desc');
+                }
+            });
+        }
+
+        // Handle column header clicks
+        function handleSort(column) {
+            let direction = 'asc';
+            
+            // If clicking the same column, toggle direction
+            if (currentSort.column === column) {
+                direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+            }
+            
+            sortData(column, direction);
+            updateSortIndicators();
         }
 
         // Render table with data
@@ -397,7 +515,7 @@
         // Search functionality
         function filterData(searchTerm) {
             if (!searchTerm) {
-                filteredData = allData;
+                filteredData = [...allData];
             } else {
                 const term = searchTerm.toLowerCase();
                 filteredData = allData.filter(row => {
@@ -406,12 +524,24 @@
                     );
                 });
             }
-            renderTable(filteredData);
+            
+            // Re-apply current sort
+            sortData(currentSort.column, currentSort.direction);
         }
 
         // Event listeners
         document.getElementById('searchInput').addEventListener('input', (e) => {
             filterData(e.target.value);
+        });
+
+        // Add click event listeners to sortable headers
+        document.addEventListener('DOMContentLoaded', () => {
+            const sortableHeaders = document.querySelectorAll('.data-table th.sortable');
+            sortableHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    handleSort(header.dataset.column);
+                });
+            });
         });
 
         // Load data on page load
